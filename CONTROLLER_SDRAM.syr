@@ -1,0 +1,518 @@
+Release 14.7 - xst P.20131013 (nt64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+--> Parameter TMPDIR set to xst/projnav.tmp
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.12 secs
+ 
+--> Parameter xsthdpdir set to xst
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.12 secs
+ 
+--> Reading design: CONTROLLER_SDRAM.prj
+
+TABLE OF CONTENTS
+  1) Synthesis Options Summary
+  2) HDL Parsing
+  3) HDL Elaboration
+  4) HDL Synthesis
+       4.1) HDL Synthesis Report
+  5) Advanced HDL Synthesis
+       5.1) Advanced HDL Synthesis Report
+  6) Low Level Synthesis
+  7) Partition Report
+  8) Design Summary
+       8.1) Primitive and Black Box Usage
+       8.2) Device utilization summary
+       8.3) Partition Resource Summary
+       8.4) Timing Report
+            8.4.1) Clock Information
+            8.4.2) Asynchronous Control Signals Information
+            8.4.3) Timing Summary
+            8.4.4) Timing Details
+            8.4.5) Cross Clock Domains Report
+
+
+=========================================================================
+*                      Synthesis Options Summary                        *
+=========================================================================
+---- Source Parameters
+Input File Name                    : "CONTROLLER_SDRAM.prj"
+Ignore Synthesis Constraint File   : NO
+
+---- Target Parameters
+Output File Name                   : "CONTROLLER_SDRAM"
+Output Format                      : NGC
+Target Device                      : xc6slx9-3-tqg144
+
+---- Source Options
+Top Module Name                    : CONTROLLER_SDRAM
+Automatic FSM Extraction           : YES
+FSM Encoding Algorithm             : Auto
+Safe Implementation                : No
+FSM Style                          : LUT
+RAM Extraction                     : Yes
+RAM Style                          : Auto
+ROM Extraction                     : Yes
+Shift Register Extraction          : YES
+ROM Style                          : Auto
+Resource Sharing                   : YES
+Asynchronous To Synchronous        : NO
+Shift Register Minimum Size        : 2
+Use DSP Block                      : Auto
+Automatic Register Balancing       : No
+
+---- Target Options
+LUT Combining                      : Auto
+Reduce Control Sets                : Auto
+Add IO Buffers                     : YES
+Global Maximum Fanout              : 100000
+Add Generic Clock Buffer(BUFG)     : 16
+Register Duplication               : YES
+Optimize Instantiated Primitives   : NO
+Use Clock Enable                   : Auto
+Use Synchronous Set                : Auto
+Use Synchronous Reset              : Auto
+Pack IO Registers into IOBs        : Auto
+Equivalent register Removal        : YES
+
+---- General Options
+Optimization Goal                  : Speed
+Optimization Effort                : 1
+Power Reduction                    : NO
+Keep Hierarchy                     : No
+Netlist Hierarchy                  : As_Optimized
+RTL Output                         : Yes
+Global Optimization                : AllClockNets
+Read Cores                         : YES
+Write Timing Constraints           : NO
+Cross Clock Analysis               : NO
+Hierarchy Separator                : /
+Bus Delimiter                      : <>
+Case Specifier                     : Maintain
+Slice Utilization Ratio            : 100
+BRAM Utilization Ratio             : 100
+DSP48 Utilization Ratio            : 100
+Auto BRAM Packing                  : NO
+Slice Utilization Ratio Delta      : 5
+
+=========================================================================
+
+
+=========================================================================
+*                          HDL Parsing                                  *
+=========================================================================
+Parsing VHDL file "D:\final project\SDRAM\CONTROLLER_SDRAM.vhd" into library work
+Parsing entity <CONTROLLER_SDRAM>.
+Parsing architecture <rtl> of entity <controller_sdram>.
+
+=========================================================================
+*                            HDL Elaboration                            *
+=========================================================================
+
+Elaborating entity <CONTROLLER_SDRAM> (architecture <rtl>) from library <work>.
+WARNING:HDLCompiler:92 - "D:\final project\SDRAM\CONTROLLER_SDRAM.vhd" Line 150: bank_r should be on the sensitivity list of the process
+
+=========================================================================
+*                           HDL Synthesis                               *
+=========================================================================
+
+Synthesizing Unit <CONTROLLER_SDRAM>.
+    Related source file is "D:\final project\SDRAM\CONTROLLER_SDRAM.vhd".
+    Found 15-bit register for signal <timer_r>.
+    Found 4-bit register for signal <cmd_r>.
+    Found 1-bit register for signal <cke_r>.
+    Found 1-bit register for signal <ready_r>.
+    Found 3-bit register for signal <refcnt_r>.
+    Found 2-bit register for signal <sdBs_o>.
+    Found 13-bit register for signal <sdAddr_o>.
+    Found 16-bit register for signal <sd_dout_r>.
+    Found 1-bit register for signal <sd_busdir_r>.
+    Found 1-bit register for signal <sdDqmh_o>.
+    Found 1-bit register for signal <sdDqml_o>.
+    Found 4-bit register for signal <state_r>.
+    Found finite state machine <FSM_0> for signal <state_r>.
+    -----------------------------------------------------------------------
+    | States             | 13                                             |
+    | Transitions        | 30                                             |
+    | Inputs             | 4                                              |
+    | Outputs            | 15                                             |
+    | Clock              | clk_100m0_i (falling_edge)                     |
+    | Reset              | reset_i (positive)                             |
+    | Reset type         | synchronous                                    |
+    | Reset State        | st_init_wait                                   |
+    | Power Up State     | st_init_wait                                   |
+    | Encoding           | auto                                           |
+    | Implementation     | LUT                                            |
+    -----------------------------------------------------------------------
+    Found 15-bit subtractor for signal <GND_7_o_GND_7_o_sub_10_OUT<14:0>> created at line 161.
+    Found 3-bit subtractor for signal <GND_7_o_GND_7_o_sub_18_OUT<2:0>> created at line 228.
+    Found 1-bit tristate buffer for signal <sdData_io<15>> created at line 112
+    Found 1-bit tristate buffer for signal <sdData_io<14>> created at line 112
+    Found 1-bit tristate buffer for signal <sdData_io<13>> created at line 112
+    Found 1-bit tristate buffer for signal <sdData_io<12>> created at line 112
+    Found 1-bit tristate buffer for signal <sdData_io<11>> created at line 112
+    Found 1-bit tristate buffer for signal <sdData_io<10>> created at line 112
+    Found 1-bit tristate buffer for signal <sdData_io<9>> created at line 112
+    Found 1-bit tristate buffer for signal <sdData_io<8>> created at line 112
+    Found 1-bit tristate buffer for signal <sdData_io<7>> created at line 112
+    Found 1-bit tristate buffer for signal <sdData_io<6>> created at line 112
+    Found 1-bit tristate buffer for signal <sdData_io<5>> created at line 112
+    Found 1-bit tristate buffer for signal <sdData_io<4>> created at line 112
+    Found 1-bit tristate buffer for signal <sdData_io<3>> created at line 112
+    Found 1-bit tristate buffer for signal <sdData_io<2>> created at line 112
+    Found 1-bit tristate buffer for signal <sdData_io<1>> created at line 112
+    Found 1-bit tristate buffer for signal <sdData_io<0>> created at line 112
+    Summary:
+	inferred   2 Adder/Subtractor(s).
+	inferred  58 D-type flip-flop(s).
+	inferred  34 Multiplexer(s).
+	inferred  16 Tristate(s).
+	inferred   1 Finite State Machine(s).
+Unit <CONTROLLER_SDRAM> synthesized.
+
+=========================================================================
+HDL Synthesis Report
+
+Macro Statistics
+# Adders/Subtractors                                   : 2
+ 15-bit subtractor                                     : 1
+ 3-bit subtractor                                      : 1
+# Registers                                            : 11
+ 1-bit register                                        : 5
+ 13-bit register                                       : 1
+ 15-bit register                                       : 1
+ 16-bit register                                       : 1
+ 2-bit register                                        : 1
+ 3-bit register                                        : 1
+ 4-bit register                                        : 1
+# Multiplexers                                         : 34
+ 1-bit 2-to-1 multiplexer                              : 7
+ 13-bit 2-to-1 multiplexer                             : 11
+ 15-bit 2-to-1 multiplexer                             : 1
+ 2-bit 2-to-1 multiplexer                              : 1
+ 3-bit 2-to-1 multiplexer                              : 3
+ 4-bit 2-to-1 multiplexer                              : 11
+# Tristates                                            : 16
+ 1-bit tristate buffer                                 : 16
+# FSMs                                                 : 1
+
+=========================================================================
+
+=========================================================================
+*                       Advanced HDL Synthesis                          *
+=========================================================================
+
+
+Synthesizing (advanced) Unit <CONTROLLER_SDRAM>.
+The following registers are absorbed into counter <timer_r>: 1 register on signal <timer_r>.
+Unit <CONTROLLER_SDRAM> synthesized (advanced).
+
+=========================================================================
+Advanced HDL Synthesis Report
+
+Macro Statistics
+# Adders/Subtractors                                   : 1
+ 3-bit subtractor                                      : 1
+# Counters                                             : 1
+ 15-bit down counter                                   : 1
+# Registers                                            : 43
+ Flip-Flops                                            : 43
+# Multiplexers                                         : 33
+ 1-bit 2-to-1 multiplexer                              : 7
+ 13-bit 2-to-1 multiplexer                             : 11
+ 2-bit 2-to-1 multiplexer                              : 1
+ 3-bit 2-to-1 multiplexer                              : 3
+ 4-bit 2-to-1 multiplexer                              : 11
+# FSMs                                                 : 1
+
+=========================================================================
+
+=========================================================================
+*                         Low Level Synthesis                           *
+=========================================================================
+Analyzing FSM <MFsm> for best encoding.
+Optimizing FSM <FSM_0> on signal <state_r[1:4]> with user encoding.
+-------------------------------
+ State             | Encoding
+-------------------------------
+ st_init_wait      | 0000
+ st_init_precharge | 0001
+ st_init_refresh1  | 0010
+ st_init_mode      | 0011
+ st_init_refresh2  | 0100
+ st_idle           | 0101
+ st_refresh        | 0110
+ st_activate       | 0111
+ st_rcd            | 1000
+ st_rw             | 1001
+ st_ras1           | 1010
+ st_ras2           | 1011
+ st_precharge      | 1100
+-------------------------------
+WARNING:Xst:1710 - FF/Latch <cmd_r_3> (without init value) has a constant value of 0 in block <CONTROLLER_SDRAM>. This FF/Latch will be trimmed during the optimization process.
+
+Optimizing unit <CONTROLLER_SDRAM> ...
+WARNING:Xst:1293 - FF/Latch <timer_r_3> has a constant value of 0 in block <CONTROLLER_SDRAM>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <timer_r_4> has a constant value of 0 in block <CONTROLLER_SDRAM>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <timer_r_5> has a constant value of 0 in block <CONTROLLER_SDRAM>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <timer_r_6> has a constant value of 0 in block <CONTROLLER_SDRAM>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <timer_r_7> has a constant value of 0 in block <CONTROLLER_SDRAM>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <timer_r_8> has a constant value of 0 in block <CONTROLLER_SDRAM>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <timer_r_9> has a constant value of 0 in block <CONTROLLER_SDRAM>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <timer_r_10> has a constant value of 0 in block <CONTROLLER_SDRAM>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <timer_r_11> has a constant value of 0 in block <CONTROLLER_SDRAM>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <timer_r_12> has a constant value of 0 in block <CONTROLLER_SDRAM>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <timer_r_13> has a constant value of 0 in block <CONTROLLER_SDRAM>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <timer_r_14> has a constant value of 0 in block <CONTROLLER_SDRAM>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <refcnt_r_2> has a constant value of 0 in block <CONTROLLER_SDRAM>. This FF/Latch will be trimmed during the optimization process.
+
+Mapping all equations...
+Building and optimizing final netlist ...
+Found area constraint ratio of 100 (+ 5) on block CONTROLLER_SDRAM, actual ratio is 1.
+FlipFlop state_r_FSM_FFd1 has been replicated 2 time(s)
+FlipFlop state_r_FSM_FFd2 has been replicated 5 time(s)
+FlipFlop state_r_FSM_FFd3 has been replicated 3 time(s)
+FlipFlop state_r_FSM_FFd4 has been replicated 4 time(s)
+FlipFlop timer_r_0 has been replicated 2 time(s)
+FlipFlop timer_r_1 has been replicated 1 time(s)
+
+Final Macro Processing ...
+
+=========================================================================
+Final Register Report
+
+Macro Statistics
+# Registers                                            : 65
+ Flip-Flops                                            : 65
+
+=========================================================================
+
+=========================================================================
+*                           Partition Report                            *
+=========================================================================
+
+Partition Implementation Status
+-------------------------------
+
+  No Partitions were found in this design.
+
+-------------------------------
+
+=========================================================================
+*                            Design Summary                             *
+=========================================================================
+
+Top Level Output File Name         : CONTROLLER_SDRAM.ngc
+
+Primitive and Black Box Usage:
+------------------------------
+# BELS                             : 109
+#      GND                         : 1
+#      INV                         : 6
+#      LUT1                        : 1
+#      LUT2                        : 3
+#      LUT3                        : 12
+#      LUT4                        : 2
+#      LUT5                        : 45
+#      LUT6                        : 30
+#      MUXCY                       : 2
+#      MUXF7                       : 3
+#      VCC                         : 1
+#      XORCY                       : 3
+# FlipFlops/Latches                : 65
+#      FD_1                        : 1
+#      FDE_1                       : 35
+#      FDR                         : 5
+#      FDR_1                       : 20
+#      FDRE                        : 1
+#      FDS_1                       : 3
+# Clock Buffers                    : 1
+#      BUFGP                       : 1
+# IO Buffers                       : 102
+#      IBUF                        : 46
+#      IOBUF                       : 16
+#      OBUF                        : 40
+
+Device utilization summary:
+---------------------------
+
+Selected Device : 6slx9tqg144-3 
+
+
+Slice Logic Utilization: 
+ Number of Slice Registers:              65  out of  11440     0%  
+ Number of Slice LUTs:                   99  out of   5720     1%  
+    Number used as Logic:                99  out of   5720     1%  
+
+Slice Logic Distribution: 
+ Number of LUT Flip Flop pairs used:    113
+   Number with an unused Flip Flop:      48  out of    113    42%  
+   Number with an unused LUT:            14  out of    113    12%  
+   Number of fully used LUT-FF pairs:    51  out of    113    45%  
+   Number of unique control sets:         7
+
+IO Utilization: 
+ Number of IOs:                         103
+ Number of bonded IOBs:                 103  out of    102   100% (*) 
+
+Specific Feature Utilization:
+ Number of BUFG/BUFGCTRLs:                1  out of     16     6%  
+
+WARNING:Xst:1336 -  (*) More than 100% of Device resources are used
+
+---------------------------
+Partition Resource Summary:
+---------------------------
+
+  No Partitions were found in this design.
+
+---------------------------
+
+
+=========================================================================
+Timing Report
+
+NOTE: THESE TIMING NUMBERS ARE ONLY A SYNTHESIS ESTIMATE.
+      FOR ACCURATE TIMING INFORMATION PLEASE REFER TO THE TRACE REPORT
+      GENERATED AFTER PLACE-and-ROUTE.
+
+Clock Information:
+------------------
+-----------------------------------+------------------------+-------+
+Clock Signal                       | Clock buffer(FF name)  | Load  |
+-----------------------------------+------------------------+-------+
+clk_100m0_i                        | BUFGP                  | 65    |
+-----------------------------------+------------------------+-------+
+
+Asynchronous Control Signals Information:
+----------------------------------------
+No asynchronous control signals found in this design
+
+Timing Summary:
+---------------
+Speed Grade: -3
+
+   Minimum period: 3.629ns (Maximum Frequency: 275.573MHz)
+   Minimum input arrival time before clock: 4.716ns
+   Maximum output required time after clock: 6.641ns
+   Maximum combinational path delay: 4.372ns
+
+Timing Details:
+---------------
+All values displayed in nanoseconds (ns)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'clk_100m0_i'
+  Clock period: 3.629ns (frequency: 275.573MHz)
+  Total number of paths / destination ports: 588 / 101
+-------------------------------------------------------------------------
+Delay:               3.629ns (Levels of Logic = 3)
+  Source:            state_r_FSM_FFd3_3 (FF)
+  Destination:       addr_r_5 (FF)
+  Source Clock:      clk_100m0_i falling
+  Destination Clock: clk_100m0_i falling
+
+  Data Path: state_r_FSM_FFd3_3 to addr_r_5
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDR_1:C->Q           14   0.447   1.205  state_r_FSM_FFd3_3 (state_r_FSM_FFd3_3)
+     LUT6:I2->O            1   0.203   0.684  Mmux_state_r[3]_X_7_o_wide_mux_36_OUT9_G (N61)
+     LUT3:I1->O            1   0.203   0.580  Mmux_state_r[3]_X_7_o_wide_mux_36_OUT91 (state_r[3]_X_7_o_wide_mux_36_OUT<5>)
+     LUT5:I4->O            1   0.205   0.000  addr_r_5_dpot (addr_r_5_dpot)
+     FDE_1:D                   0.102          addr_r_5
+    ----------------------------------------
+    Total                      3.629ns (1.160ns logic, 2.469ns route)
+                                       (32.0% logic, 68.0% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'clk_100m0_i'
+  Total number of paths / destination ports: 173 / 83
+-------------------------------------------------------------------------
+Offset:              4.716ns (Levels of Logic = 3)
+  Source:            rw_i (PAD)
+  Destination:       timer_r_2 (FF)
+  Destination Clock: clk_100m0_i falling
+
+  Data Path: rw_i to timer_r_2
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O            20   1.222   1.340  rw_i_IBUF (rw_i_IBUF)
+     LUT5:I1->O            1   0.203   0.808  _n0306_inv_SW0_SW0 (N42)
+     LUT6:I3->O            2   0.205   0.616  _n0306_inv (_n0306_inv)
+     FDRE:CE                   0.322          timer_r_2
+    ----------------------------------------
+    Total                      4.716ns (1.952ns logic, 2.764ns route)
+                                       (41.4% logic, 58.6% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'clk_100m0_i'
+  Total number of paths / destination ports: 61 / 39
+-------------------------------------------------------------------------
+Offset:              6.641ns (Levels of Logic = 3)
+  Source:            timer_r_2 (FF)
+  Destination:       done_o (PAD)
+  Source Clock:      clk_100m0_i falling
+
+  Data Path: timer_r_2 to done_o
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDRE:C->Q            26   0.447   1.435  timer_r_2 (timer_r_2)
+     LUT3:I0->O           10   0.205   1.201  n0027<14>1 (GND_7_o_timer_r[14]_not_equal_8_o_inv)
+     LUT5:I0->O            1   0.203   0.579  Mmux_done_o11 (done_o_OBUF)
+     OBUF:I->O                 2.571          done_o_OBUF (done_o)
+    ----------------------------------------
+    Total                      6.641ns (3.426ns logic, 3.215ns route)
+                                       (51.6% logic, 48.4% route)
+
+=========================================================================
+Timing constraint: Default path analysis
+  Total number of paths / destination ports: 16 / 16
+-------------------------------------------------------------------------
+Delay:               4.372ns (Levels of Logic = 2)
+  Source:            sdData_io<15> (PAD)
+  Destination:       data_o<15> (PAD)
+
+  Data Path: sdData_io<15> to data_o<15>
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IOBUF:IO->O           1   1.222   0.579  sdData_io_15_IOBUF (data_o_15_OBUF)
+     OBUF:I->O                 2.571          data_o_15_OBUF (data_o<15>)
+    ----------------------------------------
+    Total                      4.372ns (3.793ns logic, 0.579ns route)
+                                       (86.8% logic, 13.2% route)
+
+=========================================================================
+
+Cross Clock Domains Report:
+--------------------------
+
+Clock to Setup on destination clock clk_100m0_i
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+clk_100m0_i    |         |         |    3.629|         |
+---------------+---------+---------+---------+---------+
+
+=========================================================================
+
+
+Total REAL time to Xst completion: 14.00 secs
+Total CPU time to Xst completion: 14.27 secs
+ 
+--> 
+
+Total memory usage is 239952 kilobytes
+
+Number of errors   :    0 (   0 filtered)
+Number of warnings :   16 (   0 filtered)
+Number of infos    :    0 (   0 filtered)
+

@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wave_config>
+   <wave_state>
+   </wave_state>
+   <db_ref_list>
+      <db_ref path="D:/final project/SDRAM/SDRAM_TEST1_isim_beh.wdb" id="1" type="auto">
+         <top_modules>
+            <top_module name="math_real" />
+            <top_module name="numeric_std" />
+            <top_module name="sdram_test1" />
+            <top_module name="std_logic_1164" />
+            <top_module name="std_logic_arith" />
+            <top_module name="std_logic_unsigned" />
+         </top_modules>
+      </db_ref>
+   </db_ref_list>
+   <WVObjectSize size="24" />
+   <wvobject fp_name="/sdram_test1/clk_100m0_i" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">clk_100m0_i</obj_property>
+      <obj_property name="ObjectShortName">clk_100m0_i</obj_property>
+   </wvobject>
+   <wvobject fp_name="/sdram_test1/uut/cke_x" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">cke_x</obj_property>
+      <obj_property name="ObjectShortName">cke_x</obj_property>
+   </wvobject>
+   <wvobject fp_name="/sdram_test1/uut/cke_r" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">cke_r</obj_property>
+      <obj_property name="ObjectShortName">cke_r</obj_property>
+   </wvobject>
+   <wvobject fp_name="/sdram_test1/uut/state_x" type="other" db_ref_id="1">
+      <obj_property name="ElementShortName">state_x</obj_property>
+      <obj_property name="ObjectShortName">state_x</obj_property>
+   </wvobject>
+   <wvobject fp_name="/sdram_test1/uut/state_r" type="other" db_ref_id="1">
+      <obj_property name="ElementShortName">state_r</obj_property>
+      <obj_property name="ObjectShortName">state_r</obj_property>
+   </wvobject>
+   <wvobject fp_name="/sdram_test1/uut/cmd_r" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">cmd_r[3:0]</obj_property>
+      <obj_property name="ObjectShortName">cmd_r[3:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/sdram_test1/refresh_i" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">refresh_i</obj_property>
+      <obj_property name="ObjectShortName">refresh_i</obj_property>
+   </wvobject>
+   <wvobject fp_name="/sdram_test1/rw_i" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">rw_i</obj_property>
+      <obj_property name="ObjectShortName">rw_i</obj_property>
+   </wvobject>
+   <wvobject fp_name="/sdram_test1/we_i" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">we_i</obj_property>
+      <obj_property name="ObjectShortName">we_i</obj_property>
+   </wvobject>
+   <wvobject fp_name="/sdram_test1/addr_i" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">addr_i[23:0]</obj_property>
+      <obj_property name="ObjectShortName">addr_i[23:0]</obj_property>
+      <obj_property name="Radix">BINARYRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/sdram_test1/data_i" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">data_i[15:0]</obj_property>
+      <obj_property name="ObjectShortName">data_i[15:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/sdram_test1/sddata_io" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">sddata_io[15:0]</obj_property>
+      <obj_property name="ObjectShortName">sddata_io[15:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/sdram_test1/ready_o" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">ready_o</obj_property>
+      <obj_property name="ObjectShortName">ready_o</obj_property>
+   </wvobject>
+   <wvobject fp_name="/sdram_test1/done_o" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">done_o</obj_property>
+      <obj_property name="ObjectShortName">done_o</obj_property>
+   </wvobject>
+   <wvobject fp_name="/sdram_test1/data_o" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">data_o[15:0]</obj_property>
+      <obj_property name="ObjectShortName">data_o[15:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/sdram_test1/sdcke_o" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">sdcke_o</obj_property>
+      <obj_property name="ObjectShortName">sdcke_o</obj_property>
+   </wvobject>
+   <wvobject fp_name="/sdram_test1/sdce_bo" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">sdce_bo</obj_property>
+      <obj_property name="ObjectShortName">sdce_bo</obj_property>
+   </wvobject>
+   <wvobject fp_name="/sdram_test1/sdras_bo" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">sdras_bo</obj_property>
+      <obj_property name="ObjectShortName">sdras_bo</obj_property>
+   </wvobject>
+   <wvobject fp_name="/sdram_test1/sdcas_bo" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">sdcas_bo</obj_property>
+      <obj_property name="ObjectShortName">sdcas_bo</obj_property>
+   </wvobject>
+   <wvobject fp_name="/sdram_test1/sdwe_bo" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">sdwe_bo</obj_property>
+      <obj_property name="ObjectShortName">sdwe_bo</obj_property>
+   </wvobject>
+   <wvobject fp_name="/sdram_test1/sdbs_o" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">sdbs_o[1:0]</obj_property>
+      <obj_property name="ObjectShortName">sdbs_o[1:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/sdram_test1/sdaddr_o" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">sdaddr_o[12:0]</obj_property>
+      <obj_property name="ObjectShortName">sdaddr_o[12:0]</obj_property>
+      <obj_property name="Radix">BINARYRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/sdram_test1/sddqmh_o" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">sddqmh_o</obj_property>
+      <obj_property name="ObjectShortName">sddqmh_o</obj_property>
+   </wvobject>
+   <wvobject fp_name="/sdram_test1/sddqml_o" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">sddqml_o</obj_property>
+      <obj_property name="ObjectShortName">sddqml_o</obj_property>
+   </wvobject>
+</wave_config>

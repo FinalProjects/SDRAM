@@ -1,0 +1,3 @@
+work	"CONTROLLER_SDRAM.vhd"
+work	"Main_Code.vhd"
+work	"Write_to_FT245.vhd"

@@ -1,0 +1,59 @@
+###CLK
+NET "clk" LOC = "P55";
+
+###FT245
+NET "Data_FT[0]"       LOC = "P61";#IO4
+NET "Data_FT[1]"       LOC = "P59";#IO5
+NET "Data_FT[2]"       LOC = "P62";#IO3
+NET "Data_FT[3]"       LOC = "P50";#IO10
+NET "Data_FT[4]"       LOC = "P57";#IO7
+NET "Data_FT[5]"       LOC = "P56";#IO8
+NET "Data_FT[6]"       LOC = "P51";#IO9
+NET "Data_FT[7]"       LOC = "P58";#IO6
+NET "TXE"              LOC = "P47";#IO12
+NET "FT_WR"            LOC = "P48";#IO11
+
+###SDRAM
+NET "sdClock_o"            LOC = "P11";
+NET "sdCke_o"          	   LOC = "P12"; 
+        
+NET	"sdCe_bo"        		LOC = "P126";          
+NET	"sdRas_bo"       		LOC = "P127";           
+NET	"sdCas_bo"       		LOC = "P131";           
+NET	"sdWe_bo"        		LOC = "P132"; 
+          
+NET	"sdBs_o[0]"         	LOC = "P123";  
+NET	"sdBs_o[1]"         	LOC = "P124"; 
+  
+NET	"sdAddr_o[0]"       	LOC = "P120";
+NET	"sdAddr_o[1]"       	LOC = "P119";  
+NET	"sdAddr_o[2]"       	LOC = "P118";  
+NET	"sdAddr_o[3]"       	LOC = "P117";  
+NET	"sdAddr_o[4]"     	LOC = "P24";  
+NET	"sdAddr_o[5]"       	LOC = "P23";  
+NET	"sdAddr_o[6]"       	LOC = "P22";  
+NET	"sdAddr_o[7]"       	LOC = "P21";  
+NET	"sdAddr_o[8]"       	LOC = "P17";  
+NET	"sdAddr_o[9]"       	LOC = "P16";  
+NET	"sdAddr_o[10]"       LOC = "P121";  
+NET	"sdAddr_o[11]"       LOC = "P15";  
+NET	"sdAddr_o[12]"       LOC = "P14"; 
+    
+NET	"sdData_io[0]"       LOC = "P143";
+NET	"sdData_io[1]"       LOC = "P142"; 
+NET	"sdData_io[2]"       LOC = "P141"; 
+NET	"sdData_io[3]"       LOC = "P140"; 
+NET	"sdData_io[4]"       LOC = "P139"; 
+NET	"sdData_io[5]"       LOC = "P138"; 
+NET	"sdData_io[6]"       LOC = "P137"; 
+NET	"sdData_io[7]"       LOC = "P134"; 
+NET	"sdData_io[8]"       LOC = "P9"; 
+NET	"sdData_io[9]"       LOC = "P8"; 
+NET	"sdData_io[10]"      LOC = "P67"; ##AZ PAYE EZAFEHA ZADAM!!
+NET	"sdData_io[11]"      LOC = "P1"; 
+NET	"sdData_io[12]"      LOC = "P2"; 
+NET	"sdData_io[13]"      LOC = "P5"; 
+NET	"sdData_io[14]"      LOC = "P6"; 
+NET	"sdData_io[15]"      LOC = "P7";  
+NET	"sdDqmh_o"      		LOC = "P10";           
+NET	"sdDqml_o"       		LOC = "P133";

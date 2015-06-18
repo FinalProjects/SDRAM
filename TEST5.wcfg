@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wave_config>
+   <wave_state>
+   </wave_state>
+   <db_ref_list>
+      <db_ref path="D:/final project/SDRAM/test4_MainCode_isim_beh.wdb" id="1" type="auto">
+         <top_modules>
+            <top_module name="math_real" />
+            <top_module name="numeric_std" />
+            <top_module name="std_logic_1164" />
+            <top_module name="std_logic_arith" />
+            <top_module name="std_logic_unsigned" />
+            <top_module name="test4_maincode" />
+         </top_modules>
+      </db_ref>
+   </db_ref_list>
+   <WVObjectSize size="15" />
+   <wvobject fp_name="/test4_maincode/clk" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">clk</obj_property>
+      <obj_property name="ObjectShortName">clk</obj_property>
+   </wvobject>
+   <wvobject fp_name="/test4_maincode/sddata_io" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">sddata_io[15:0]</obj_property>
+      <obj_property name="ObjectShortName">sddata_io[15:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/test4_maincode/uut/ft_show" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">ft_show[15:0]</obj_property>
+      <obj_property name="ObjectShortName">ft_show[15:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/test4_maincode/uut/SDRAMCTRL/flg_read" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">flg_read</obj_property>
+      <obj_property name="ObjectShortName">flg_read</obj_property>
+   </wvobject>
+   <wvobject fp_name="/test4_maincode/uut/SDRAMCTRL/state_r" type="other" db_ref_id="1">
+      <obj_property name="ElementShortName">state_r</obj_property>
+      <obj_property name="ObjectShortName">state_r</obj_property>
+   </wvobject>
+   <wvobject fp_name="/test4_maincode/uut/SDRAMCTRL/cmd_r" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">cmd_r[3:0]</obj_property>
+      <obj_property name="ObjectShortName">cmd_r[3:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/test4_maincode/uut/state_sd" type="other" db_ref_id="1">
+      <obj_property name="ElementShortName">state_sd</obj_property>
+      <obj_property name="ObjectShortName">state_sd</obj_property>
+   </wvobject>
+   <wvobject fp_name="/test4_maincode/sddqmh_o" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">sddqmh_o</obj_property>
+      <obj_property name="ObjectShortName">sddqmh_o</obj_property>
+   </wvobject>
+   <wvobject fp_name="/test4_maincode/sddqml_o" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">sddqml_o</obj_property>
+      <obj_property name="ObjectShortName">sddqml_o</obj_property>
+   </wvobject>
+   <wvobject fp_name="/test4_maincode/uut/cnt" type="other" db_ref_id="1">
+      <obj_property name="ElementShortName">cnt</obj_property>
+      <obj_property name="ObjectShortName">cnt</obj_property>
+   </wvobject>
+   <wvobject fp_name="/test4_maincode/sdbs_o" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">sdbs_o[1:0]</obj_property>
+      <obj_property name="ObjectShortName">sdbs_o[1:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/test4_maincode/sdaddr_o" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">sdaddr_o[12:0]</obj_property>
+      <obj_property name="ObjectShortName">sdaddr_o[12:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/test4_maincode/uut/SDRAMCTRL/row_s" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">row_s[12:0]</obj_property>
+      <obj_property name="ObjectShortName">row_s[12:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/test4_maincode/uut/SDRAMCTRL/col_s" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">col_s[8:0]</obj_property>
+      <obj_property name="ObjectShortName">col_s[8:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/test4_maincode/uut/SDRAMCTRL/addr_r" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">addr_r[12:0]</obj_property>
+      <obj_property name="ObjectShortName">addr_r[12:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+</wave_config>

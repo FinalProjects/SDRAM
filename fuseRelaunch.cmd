@@ -1,0 +1,1 @@
+-intstyle "ise" -incremental -lib "secureip" -o "D:/final project/SDRAM/test4_MainCode_isim_beh.exe" -prj "D:/final project/SDRAM/test4_MainCode_beh.prj" "work.test4_MainCode" 
