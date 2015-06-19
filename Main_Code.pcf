@@ -1,13 +1,8 @@
 //! **************************************************************************
-// Written by: Map P.20131013 on Thu Jun 18 13:07:08 2015
+// Written by: Map P.20131013 on Fri Jun 19 18:05:00 2015
 //! **************************************************************************
 
 SCHEMATIC START;
-COMP "DATA_FT<6>" LOCATE = SITE "P51" LEVEL 1;
-COMP "DATA_FT<7>" LOCATE = SITE "P58" LEVEL 1;
-COMP "FT_WR" LOCATE = SITE "P48" LEVEL 1;
-COMP "sdWe_bo" LOCATE = SITE "P132" LEVEL 1;
-COMP "sdBs_o<0>" LOCATE = SITE "P123" LEVEL 1;
 COMP "sdData_io<0>" LOCATE = SITE "P143" LEVEL 1;
 COMP "sdBs_o<1>" LOCATE = SITE "P124" LEVEL 1;
 COMP "sdData_io<1>" LOCATE = SITE "P142" LEVEL 1;
@@ -53,5 +48,10 @@ COMP "DATA_FT<4>" LOCATE = SITE "P57" LEVEL 1;
 COMP "sdData_io<14>" LOCATE = SITE "P6" LEVEL 1;
 COMP "DATA_FT<5>" LOCATE = SITE "P56" LEVEL 1;
 COMP "sdData_io<15>" LOCATE = SITE "P7" LEVEL 1;
+COMP "DATA_FT<6>" LOCATE = SITE "P51" LEVEL 1;
+COMP "DATA_FT<7>" LOCATE = SITE "P58" LEVEL 1;
+COMP "FT_WR" LOCATE = SITE "P48" LEVEL 1;
+COMP "sdWe_bo" LOCATE = SITE "P132" LEVEL 1;
+COMP "sdBs_o<0>" LOCATE = SITE "P123" LEVEL 1;
 SCHEMATIC END;
 

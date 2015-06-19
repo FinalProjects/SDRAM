@@ -33,62 +33,73 @@ Data Sheet report:
 All values displayed in nanoseconds (ns)
 
 Setup/Hold to clock CLK
-------------+------------+------------+------------+------------+------------------+--------+
-            |Max Setup to|  Process   |Max Hold to |  Process   |                  | Clock  |
-Source      | clk (edge) |   Corner   | clk (edge) |   Corner   |Internal Clock(s) | Phase  |
-------------+------------+------------+------------+------------+------------------+--------+
-TXE         |    2.423(R)|      SLOW  |   -0.643(R)|      SLOW  |CLK_IBUF_BUFG     |   0.000|
-------------+------------+------------+------------+------------+------------------+--------+
+-------------+------------+------------+------------+------------+------------------+--------+
+             |Max Setup to|  Process   |Max Hold to |  Process   |                  | Clock  |
+Source       | clk (edge) |   Corner   | clk (edge) |   Corner   |Internal Clock(s) | Phase  |
+-------------+------------+------------+------------+------------+------------------+--------+
+TXE          |    4.589(R)|      SLOW  |   -1.089(R)|      SLOW  |CLK_IBUF_BUFG     |   0.000|
+sdData_io<0> |    2.251(R)|      SLOW  |   -1.167(R)|      FAST  |CLK_IBUF_BUFG     |   0.000|
+sdData_io<1> |    2.212(R)|      SLOW  |   -1.090(R)|      FAST  |CLK_IBUF_BUFG     |   0.000|
+sdData_io<2> |    2.012(R)|      SLOW  |   -0.970(R)|      FAST  |CLK_IBUF_BUFG     |   0.000|
+sdData_io<3> |    2.394(R)|      SLOW  |   -1.220(R)|      FAST  |CLK_IBUF_BUFG     |   0.000|
+sdData_io<4> |    2.284(R)|      SLOW  |   -1.187(R)|      FAST  |CLK_IBUF_BUFG     |   0.000|
+sdData_io<5> |    2.021(R)|      SLOW  |   -0.984(R)|      FAST  |CLK_IBUF_BUFG     |   0.000|
+sdData_io<6> |    2.013(R)|      SLOW  |   -0.956(R)|      FAST  |CLK_IBUF_BUFG     |   0.000|
+sdData_io<7> |    2.083(R)|      SLOW  |   -1.004(R)|      FAST  |CLK_IBUF_BUFG     |   0.000|
+sdData_io<8> |    2.367(R)|      SLOW  |   -1.211(R)|      FAST  |CLK_IBUF_BUFG     |   0.000|
+sdData_io<9> |    2.635(R)|      SLOW  |   -1.328(R)|      FAST  |CLK_IBUF_BUFG     |   0.000|
+sdData_io<10>|    3.581(R)|      SLOW  |   -1.982(R)|      FAST  |CLK_IBUF_BUFG     |   0.000|
+sdData_io<11>|    2.997(R)|      SLOW  |   -1.602(R)|      FAST  |CLK_IBUF_BUFG     |   0.000|
+sdData_io<12>|    2.452(R)|      SLOW  |   -1.227(R)|      FAST  |CLK_IBUF_BUFG     |   0.000|
+sdData_io<13>|    1.943(R)|      SLOW  |   -0.895(R)|      FAST  |CLK_IBUF_BUFG     |   0.000|
+sdData_io<14>|    1.901(R)|      SLOW  |   -0.871(R)|      FAST  |CLK_IBUF_BUFG     |   0.000|
+sdData_io<15>|    1.867(R)|      SLOW  |   -0.861(R)|      FAST  |CLK_IBUF_BUFG     |   0.000|
+-------------+------------+------------+------------+------------+------------------+--------+
 
 Clock CLK to Pad
 -------------+-----------------+------------+-----------------+------------+------------------+--------+
              |Max (slowest) clk|  Process   |Min (fastest) clk|  Process   |                  | Clock  |
 Destination  |  (edge) to PAD  |   Corner   |  (edge) to PAD  |   Corner   |Internal Clock(s) | Phase  |
 -------------+-----------------+------------+-----------------+------------+------------------+--------+
-DATA_FT<1>   |         7.656(R)|      SLOW  |         4.063(R)|      FAST  |CLK_IBUF_BUFG     |   0.000|
-DATA_FT<3>   |         6.857(R)|      SLOW  |         3.507(R)|      FAST  |CLK_IBUF_BUFG     |   0.000|
-DATA_FT<4>   |         7.861(R)|      SLOW  |         4.219(R)|      FAST  |CLK_IBUF_BUFG     |   0.000|
-DATA_FT<5>   |         7.206(R)|      SLOW  |         3.813(R)|      FAST  |CLK_IBUF_BUFG     |   0.000|
-DATA_FT<6>   |         6.988(R)|      SLOW  |         3.586(R)|      FAST  |CLK_IBUF_BUFG     |   0.000|
-DATA_FT<7>   |         7.887(R)|      SLOW  |         4.193(R)|      FAST  |CLK_IBUF_BUFG     |   0.000|
-FT_WR        |         7.312(R)|      SLOW  |         3.796(R)|      FAST  |CLK_IBUF_BUFG     |   0.000|
-sdAddr_o<0>  |         7.450(F)|      SLOW  |         3.879(F)|      FAST  |CLK_IBUF_BUFG     |   0.000|
-sdAddr_o<1>  |         7.911(F)|      SLOW  |         4.222(F)|      FAST  |CLK_IBUF_BUFG     |   0.000|
-sdAddr_o<2>  |         7.845(F)|      SLOW  |         4.123(F)|      FAST  |CLK_IBUF_BUFG     |   0.000|
-sdAddr_o<3>  |         7.880(F)|      SLOW  |         4.209(F)|      FAST  |CLK_IBUF_BUFG     |   0.000|
-sdAddr_o<4>  |         8.665(F)|      SLOW  |         4.617(F)|      FAST  |CLK_IBUF_BUFG     |   0.000|
-sdAddr_o<5>  |         8.565(F)|      SLOW  |         4.546(F)|      FAST  |CLK_IBUF_BUFG     |   0.000|
-sdAddr_o<6>  |         8.504(F)|      SLOW  |         4.520(F)|      FAST  |CLK_IBUF_BUFG     |   0.000|
-sdAddr_o<7>  |         8.499(F)|      SLOW  |         4.515(F)|      FAST  |CLK_IBUF_BUFG     |   0.000|
-sdAddr_o<8>  |         8.116(F)|      SLOW  |         4.272(F)|      FAST  |CLK_IBUF_BUFG     |   0.000|
-sdAddr_o<9>  |         8.400(F)|      SLOW  |         4.441(F)|      FAST  |CLK_IBUF_BUFG     |   0.000|
-sdAddr_o<10> |         7.236(F)|      SLOW  |         3.746(F)|      FAST  |CLK_IBUF_BUFG     |   0.000|
-sdAddr_o<11> |         8.239(F)|      SLOW  |         4.344(F)|      FAST  |CLK_IBUF_BUFG     |   0.000|
-sdAddr_o<12> |         8.234(F)|      SLOW  |         4.339(F)|      FAST  |CLK_IBUF_BUFG     |   0.000|
-sdBs_o<0>    |         7.802(F)|      SLOW  |         4.182(F)|      FAST  |CLK_IBUF_BUFG     |   0.000|
-sdBs_o<1>    |         7.963(F)|      SLOW  |         4.279(F)|      FAST  |CLK_IBUF_BUFG     |   0.000|
-sdCas_bo     |         7.147(F)|      SLOW  |         3.695(F)|      FAST  |CLK_IBUF_BUFG     |   0.000|
-sdCke_o      |         7.249(F)|      SLOW  |         3.774(F)|      FAST  |CLK_IBUF_BUFG     |   0.000|
-sdData_io<0> |         8.761(F)|      SLOW  |         4.094(F)|      FAST  |CLK_IBUF_BUFG     |   0.000|
-sdData_io<1> |         8.650(F)|      SLOW  |         4.066(F)|      FAST  |CLK_IBUF_BUFG     |   0.000|
-sdData_io<2> |         8.650(F)|      SLOW  |         3.935(F)|      FAST  |CLK_IBUF_BUFG     |   0.000|
-sdData_io<3> |         8.821(F)|      SLOW  |         4.008(F)|      FAST  |CLK_IBUF_BUFG     |   0.000|
-sdData_io<4> |         8.821(F)|      SLOW  |         4.729(F)|      FAST  |CLK_IBUF_BUFG     |   0.000|
-sdData_io<5> |         9.135(F)|      SLOW  |         4.967(F)|      FAST  |CLK_IBUF_BUFG     |   0.000|
-sdData_io<6> |         9.135(F)|      SLOW  |         4.967(F)|      FAST  |CLK_IBUF_BUFG     |   0.000|
-sdData_io<7> |         9.866(F)|      SLOW  |         5.394(F)|      FAST  |CLK_IBUF_BUFG     |   0.000|
-sdData_io<8> |         7.497(F)|      SLOW  |         3.856(F)|      FAST  |CLK_IBUF_BUFG     |   0.000|
-sdData_io<9> |         7.669(F)|      SLOW  |         3.964(F)|      FAST  |CLK_IBUF_BUFG     |   0.000|
-sdData_io<10>|        11.136(F)|      SLOW  |         6.162(F)|      FAST  |CLK_IBUF_BUFG     |   0.000|
-sdData_io<11>|         9.575(F)|      SLOW  |         5.246(F)|      FAST  |CLK_IBUF_BUFG     |   0.000|
-sdData_io<12>|         9.241(F)|      SLOW  |         4.988(F)|      FAST  |CLK_IBUF_BUFG     |   0.000|
-sdData_io<13>|         7.844(F)|      SLOW  |         4.075(F)|      FAST  |CLK_IBUF_BUFG     |   0.000|
-sdData_io<14>|         7.844(F)|      SLOW  |         4.075(F)|      FAST  |CLK_IBUF_BUFG     |   0.000|
-sdData_io<15>|         7.669(F)|      SLOW  |         3.964(F)|      FAST  |CLK_IBUF_BUFG     |   0.000|
-sdDqmh_o     |         7.229(F)|      SLOW  |         3.749(F)|      FAST  |CLK_IBUF_BUFG     |   0.000|
-sdDqml_o     |         7.722(F)|      SLOW  |         4.059(F)|      FAST  |CLK_IBUF_BUFG     |   0.000|
-sdRas_bo     |         7.881(F)|      SLOW  |         4.212(F)|      FAST  |CLK_IBUF_BUFG     |   0.000|
-sdWe_bo      |         7.163(F)|      SLOW  |         3.706(F)|      FAST  |CLK_IBUF_BUFG     |   0.000|
+DATA_FT<0>   |         9.364(R)|      SLOW  |         5.093(R)|      FAST  |CLK_IBUF_BUFG     |   0.000|
+DATA_FT<1>   |         9.201(R)|      SLOW  |         4.935(R)|      FAST  |CLK_IBUF_BUFG     |   0.000|
+DATA_FT<2>   |         9.364(R)|      SLOW  |         5.093(R)|      FAST  |CLK_IBUF_BUFG     |   0.000|
+DATA_FT<3>   |         8.811(R)|      SLOW  |         4.657(R)|      FAST  |CLK_IBUF_BUFG     |   0.000|
+DATA_FT<4>   |         9.767(R)|      SLOW  |         5.326(R)|      FAST  |CLK_IBUF_BUFG     |   0.000|
+DATA_FT<5>   |         9.491(R)|      SLOW  |         5.172(R)|      FAST  |CLK_IBUF_BUFG     |   0.000|
+DATA_FT<6>   |         9.862(R)|      SLOW  |         5.446(R)|      FAST  |CLK_IBUF_BUFG     |   0.000|
+DATA_FT<7>   |         9.797(R)|      SLOW  |         5.356(R)|      FAST  |CLK_IBUF_BUFG     |   0.000|
+FT_WR        |         7.904(R)|      SLOW  |         4.121(R)|      FAST  |CLK_IBUF_BUFG     |   0.000|
+sdAddr_o<0>  |         7.393(F)|      SLOW  |         3.865(F)|      FAST  |CLK_IBUF_BUFG     |   0.000|
+sdAddr_o<1>  |         7.825(F)|      SLOW  |         4.136(F)|      FAST  |CLK_IBUF_BUFG     |   0.000|
+sdAddr_o<2>  |         7.677(F)|      SLOW  |         4.017(F)|      FAST  |CLK_IBUF_BUFG     |   0.000|
+sdAddr_o<3>  |         7.751(F)|      SLOW  |         4.088(F)|      FAST  |CLK_IBUF_BUFG     |   0.000|
+sdAddr_o<5>  |         8.865(F)|      SLOW  |         4.771(F)|      FAST  |CLK_IBUF_BUFG     |   0.000|
+sdAddr_o<10> |         7.565(F)|      SLOW  |         3.943(F)|      FAST  |CLK_IBUF_BUFG     |   0.000|
+sdBs_o<0>    |         7.247(F)|      SLOW  |         3.738(F)|      FAST  |CLK_IBUF_BUFG     |   0.000|
+sdBs_o<1>    |         7.429(F)|      SLOW  |         3.873(F)|      FAST  |CLK_IBUF_BUFG     |   0.000|
+sdCas_bo     |         7.667(F)|      SLOW  |         4.080(F)|      FAST  |CLK_IBUF_BUFG     |   0.000|
+sdCke_o      |         6.991(F)|      SLOW  |         3.585(F)|      FAST  |CLK_IBUF_BUFG     |   0.000|
+sdData_io<0> |         9.049(F)|      SLOW  |         3.792(F)|      FAST  |CLK_IBUF_BUFG     |   0.000|
+sdData_io<1> |         8.938(F)|      SLOW  |         4.019(F)|      FAST  |CLK_IBUF_BUFG     |   0.000|
+sdData_io<2> |         8.938(F)|      SLOW  |         3.923(F)|      FAST  |CLK_IBUF_BUFG     |   0.000|
+sdData_io<3> |         8.514(F)|      SLOW  |         3.775(F)|      FAST  |CLK_IBUF_BUFG     |   0.000|
+sdData_io<4> |         8.510(F)|      SLOW  |         4.476(F)|      FAST  |CLK_IBUF_BUFG     |   0.000|
+sdData_io<5> |         9.071(F)|      SLOW  |         4.897(F)|      FAST  |CLK_IBUF_BUFG     |   0.000|
+sdData_io<6> |         8.908(F)|      SLOW  |         3.914(F)|      FAST  |CLK_IBUF_BUFG     |   0.000|
+sdData_io<7> |         7.907(F)|      SLOW  |         4.058(F)|      FAST  |CLK_IBUF_BUFG     |   0.000|
+sdData_io<8> |         7.841(F)|      SLOW  |         4.064(F)|      FAST  |CLK_IBUF_BUFG     |   0.000|
+sdData_io<9> |         7.841(F)|      SLOW  |         4.038(F)|      FAST  |CLK_IBUF_BUFG     |   0.000|
+sdData_io<10>|        10.926(F)|      SLOW  |         5.989(F)|      FAST  |CLK_IBUF_BUFG     |   0.000|
+sdData_io<11>|         9.122(F)|      SLOW  |         4.845(F)|      FAST  |CLK_IBUF_BUFG     |   0.000|
+sdData_io<12>|         9.122(F)|      SLOW  |         4.845(F)|      FAST  |CLK_IBUF_BUFG     |   0.000|
+sdData_io<13>|         8.001(F)|      SLOW  |         4.134(F)|      FAST  |CLK_IBUF_BUFG     |   0.000|
+sdData_io<14>|         8.001(F)|      SLOW  |         4.134(F)|      FAST  |CLK_IBUF_BUFG     |   0.000|
+sdData_io<15>|         8.008(F)|      SLOW  |         4.167(F)|      FAST  |CLK_IBUF_BUFG     |   0.000|
+sdDqmh_o     |         7.437(F)|      SLOW  |         3.904(F)|      FAST  |CLK_IBUF_BUFG     |   0.000|
+sdDqml_o     |         7.653(F)|      SLOW  |         4.092(F)|      FAST  |CLK_IBUF_BUFG     |   0.000|
+sdRas_bo     |         7.318(F)|      SLOW  |         3.764(F)|      FAST  |CLK_IBUF_BUFG     |   0.000|
+sdWe_bo      |         7.683(F)|      SLOW  |         4.091(F)|      FAST  |CLK_IBUF_BUFG     |   0.000|
 -------------+-----------------+------------+-----------------+------------+------------------+--------+
 
 Clock to Setup on destination clock CLK
@@ -96,7 +107,7 @@ Clock to Setup on destination clock CLK
                | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
 Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
 ---------------+---------+---------+---------+---------+
-CLK            |    3.917|    3.535|    2.612|    5.593|
+CLK            |    5.167|    3.590|    3.700|    6.104|
 ---------------+---------+---------+---------+---------+
 
 Pad to Pad
@@ -107,14 +118,14 @@ CLK            |sdClock_o      |    9.052|
 ---------------+---------------+---------+
 
 
-Analysis completed Thu Jun 18 13:07:26 2015 
+Analysis completed Fri Jun 19 18:05:19 2015 
 --------------------------------------------------------------------------------
 
 Trace Settings:
 -------------------------
 Trace Settings 
 
-Peak Memory Usage: 237 MB
+Peak Memory Usage: 232 MB
 
 
 

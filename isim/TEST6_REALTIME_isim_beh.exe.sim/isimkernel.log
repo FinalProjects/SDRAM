@@ -1,0 +1,10 @@
+Command line:
+   TEST6_REALTIME_isim_beh.exe
+     -simmode  gui
+     -simrunnum  0
+     -socket  64779
+
+Fri Jun 19 15:33:26 2015
+
+
+ Elaboration Time: 0.109375 sec

@@ -37,7 +37,9 @@ entity CONTROLLER_SDRAM is
       lb_i           : in std_logic;            -- Data lower byte enable, active low
       ready_o        : out std_logic := '0';    -- Set to '1' when the memory is ready
       done_o         : out std_logic := '0';    -- Read, write, or refresh, operation is done
+		done_read         : out std_logic := '0';    -- Read, write, or refresh, operation is done
       data_o         : out std_logic_vector(15 downto 0);   -- Data from SDRAM to host
+		flg_read_O			: out std_logic := '0';
  
       -- SDRAM side
       sdCke_o        : out std_logic:='0';           -- Clock-enable to SDRAM
@@ -160,7 +162,7 @@ begin
  
       ready_x     <= ready_r;       -- Always ready unless performing initialization.
       done_o      <= '0';           -- Done tick, single cycle.
- 
+		done_read      <= '0';           -- Done tick, single cycle.
       if timer_r /= 0 then
          timer_x <= timer_r - 1;
       else
@@ -267,7 +269,7 @@ begin
 				timer_x <= 1;
             state_x <= ST_RCD;
             sd_dout_x <= data_i;       -- Register any write data, even if not used.
- 
+  
          when ST_RCD =>
             -- 10ns since activate.
             -- Trcd == 20ns min.  The clock is 10ns, so the requirement is satisfied by this state.
@@ -280,11 +282,13 @@ begin
                sd_dqmu_x <= '0';--ub_i;--
                sd_dqml_x <= '0';--lb_i;--
 					flg_read <= '0';
-					FT_SHOW <= "0000000000000000";--"ZZZZZZZZZZZZZZZZ";--
+					flg_read_o <= '0';
+					FT_SHOW <= "0000000000000001";--"ZZZZZZZZZZZZZZZZ";--
             else
                cmd_x <= CMD_READ;
 					flg_read <= '1';
-					--FT_SHOW <= sdData_io;
+					flg_read_O <= '1';
+					--FT_SHOW <= "0000000000000010";--sdData_io;
             end if;
  
          when ST_RW =>
@@ -292,13 +296,19 @@ begin
             -- READ or WRITE command presented to SDRAM.
             state_x <= ST_RAS1;
             sd_busdir_x <= '0';
+				timer_x <= 1;--TEST
+				if(flg_read='1') then
+				sd_dqmu_x <= '1';--TEST
+            sd_dqml_x <= '1';--TEST
+				end if;
  
          when ST_RAS1 =>
             -- 30ns since activate.
             state_x <= ST_RAS2;
-				sd_dqmu_x <= ub_i; --'1';--TEST
-            sd_dqml_x <= lb_i;--'1';--TEST
-				timer_x <= 1;--TEST
+				sd_dqmu_x <= '0';--ub_i; --'1';--TEST
+            sd_dqml_x <= '0';--lb_i;--'1';--TEST
+				done_Read <= '1';				-- Read data is ready and should be latched by the host.
+				done_o <= '1';
  
          when ST_RAS2 =>
             -- 40ns since activate.
@@ -307,9 +317,14 @@ begin
             state_x <= ST_PRECHARGE;
             cmd_x <= CMD_PRECHARGE;
             addr_x(10) <= '1';         -- Precharge all banks.
-				sd_dqmu_x <= ub_i; --'1';--TEST
-            sd_dqml_x <= lb_i;--'1';--TEST
-			
+				sd_dqmu_x <= '0';--ub_i; --'1';--TEST
+            sd_dqml_x <= '0';--lb_i;--'1';--TEST
+				
+--				if (flg_read = '1') then
+--				FT_SHOW <= "1111111111111111";--sdData_io;--
+--				else
+--				FT_SHOW <= "0000000000000000";--"ZZZZZZZZZZZZZZZZ";--
+--				END IF;
 				
 --			FT_SHOW <= sdData_io;
 				
@@ -317,12 +332,9 @@ begin
             -- 50ns since activate.
             -- PRECHARGE presented to SDRAM.
             state_x <= ST_IDLE;
-           	done_o <= '1';				-- Read data is ready and should be latched by the host.
-				if (flg_read = '1') then
-				FT_SHOW <= "1111111111111111";--sdData_io;--
-				else
-				FT_SHOW <= "0000000000000000";--"ZZZZZZZZZZZZZZZZ";--
-				END IF;
+				
+           	
+				
          end case;
       end if;
    end process;

@@ -3,14 +3,14 @@ Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
 --> Parameter TMPDIR set to xst/projnav.tmp
 
 
-Total REAL time to Xst completion: 1.00 secs
-Total CPU time to Xst completion: 0.13 secs
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.14 secs
  
 --> Parameter xsthdpdir set to xst
 
 
-Total REAL time to Xst completion: 1.00 secs
-Total CPU time to Xst completion: 0.13 secs
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.14 secs
  
 --> Reading design: Main_Code.prj
 
@@ -105,13 +105,13 @@ Slice Utilization Ratio Delta      : 5
 =========================================================================
 *                          HDL Parsing                                  *
 =========================================================================
-Parsing VHDL file "D:\final project\SDRAM\Write_to_FT245.vhd" into library work
+Parsing VHDL file "D:\github\FinalProject\SDRAM\Write_to_FT245.vhd" into library work
 Parsing entity <Write_to_FT245>.
 Parsing architecture <Behavioral> of entity <write_to_ft245>.
-Parsing VHDL file "D:\final project\SDRAM\CONTROLLER_SDRAM.vhd" into library work
+Parsing VHDL file "D:\github\FinalProject\SDRAM\CONTROLLER_SDRAM.vhd" into library work
 Parsing entity <CONTROLLER_SDRAM>.
 Parsing architecture <rtl> of entity <controller_sdram>.
-Parsing VHDL file "D:\final project\SDRAM\Main_Code.vhd" into library work
+Parsing VHDL file "D:\github\FinalProject\SDRAM\Main_Code.vhd" into library work
 Parsing entity <Main_Code>.
 Parsing architecture <Behavioral> of entity <main_code>.
 
@@ -122,43 +122,45 @@ Parsing architecture <Behavioral> of entity <main_code>.
 Elaborating entity <Main_Code> (architecture <Behavioral>) from library <work>.
 
 Elaborating entity <CONTROLLER_SDRAM> (architecture <rtl>) from library <work>.
-WARNING:HDLCompiler:92 - "D:\final project\SDRAM\CONTROLLER_SDRAM.vhd" Line 154: bank_r should be on the sensitivity list of the process
-WARNING:HDLCompiler:92 - "D:\final project\SDRAM\CONTROLLER_SDRAM.vhd" Line 321: flg_read should be on the sensitivity list of the process
+WARNING:HDLCompiler:92 - "D:\github\FinalProject\SDRAM\CONTROLLER_SDRAM.vhd" Line 156: bank_r should be on the sensitivity list of the process
+WARNING:HDLCompiler:92 - "D:\github\FinalProject\SDRAM\CONTROLLER_SDRAM.vhd" Line 300: flg_read should be on the sensitivity list of the process
 
 Elaborating entity <Write_to_FT245> (architecture <Behavioral>) from library <work>.
-WARNING:HDLCompiler:92 - "D:\final project\SDRAM\Main_Code.vhd" Line 232: cnt should be on the sensitivity list of the process
-WARNING:HDLCompiler:92 - "D:\final project\SDRAM\Main_Code.vhd" Line 233: cnt should be on the sensitivity list of the process
-WARNING:HDLCompiler:92 - "D:\final project\SDRAM\Main_Code.vhd" Line 252: cnt should be on the sensitivity list of the process
-WARNING:HDLCompiler:92 - "D:\final project\SDRAM\Main_Code.vhd" Line 255: cnt should be on the sensitivity list of the process
-WARNING:HDLCompiler:92 - "D:\final project\SDRAM\Main_Code.vhd" Line 258: cnt should be on the sensitivity list of the process
-WARNING:HDLCompiler:92 - "D:\final project\SDRAM\Main_Code.vhd" Line 261: cnt should be on the sensitivity list of the process
-WARNING:HDLCompiler:92 - "D:\final project\SDRAM\Main_Code.vhd" Line 264: cnt should be on the sensitivity list of the process
-WARNING:HDLCompiler:92 - "D:\final project\SDRAM\Main_Code.vhd" Line 267: cnt should be on the sensitivity list of the process
-WARNING:HDLCompiler:92 - "D:\final project\SDRAM\Main_Code.vhd" Line 270: cnt should be on the sensitivity list of the process
-WARNING:HDLCompiler:634 - "D:\final project\SDRAM\Main_Code.vhd" Line 90: Net <reset_i_S> does not have a driver.
+WARNING:HDLCompiler:92 - "D:\github\FinalProject\SDRAM\Main_Code.vhd" Line 169: cnt should be on the sensitivity list of the process
+WARNING:HDLCompiler:92 - "D:\github\FinalProject\SDRAM\Main_Code.vhd" Line 170: cnt should be on the sensitivity list of the process
+WARNING:HDLCompiler:92 - "D:\github\FinalProject\SDRAM\Main_Code.vhd" Line 192: cnt should be on the sensitivity list of the process
+WARNING:HDLCompiler:92 - "D:\github\FinalProject\SDRAM\Main_Code.vhd" Line 195: cnt should be on the sensitivity list of the process
+WARNING:HDLCompiler:92 - "D:\github\FinalProject\SDRAM\Main_Code.vhd" Line 199: cnt should be on the sensitivity list of the process
+WARNING:HDLCompiler:92 - "D:\github\FinalProject\SDRAM\Main_Code.vhd" Line 202: cnt should be on the sensitivity list of the process
+WARNING:HDLCompiler:92 - "D:\github\FinalProject\SDRAM\Main_Code.vhd" Line 205: cnt should be on the sensitivity list of the process
+WARNING:HDLCompiler:92 - "D:\github\FinalProject\SDRAM\Main_Code.vhd" Line 208: cnt should be on the sensitivity list of the process
+WARNING:HDLCompiler:92 - "D:\github\FinalProject\SDRAM\Main_Code.vhd" Line 211: cnt should be on the sensitivity list of the process
+WARNING:HDLCompiler:1127 - "D:\github\FinalProject\SDRAM\Main_Code.vhd" Line 146: Assignment to ft_show2 ignored, since the identifier is never used
+WARNING:HDLCompiler:634 - "D:\github\FinalProject\SDRAM\Main_Code.vhd" Line 91: Net <reset_i_S> does not have a driver.
 
 =========================================================================
 *                           HDL Synthesis                               *
 =========================================================================
 
 Synthesizing Unit <Main_Code>.
-    Related source file is "D:\final project\SDRAM\Main_Code.vhd".
-INFO:Xst:3210 - "D:\final project\SDRAM\Main_Code.vhd" line 110: Output port <data_o> of the instance <SDRAMCTRL> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "D:\final project\SDRAM\Main_Code.vhd" line 110: Output port <FT_SHOW> of the instance <SDRAMCTRL> is unconnected or connected to loadless signal.
+    Related source file is "D:\github\FinalProject\SDRAM\Main_Code.vhd".
+INFO:Xst:3210 - "D:\github\FinalProject\SDRAM\Main_Code.vhd" line 113: Output port <FT_SHOW> of the instance <SDRAMCTRL> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "D:\github\FinalProject\SDRAM\Main_Code.vhd" line 113: Output port <done_read> of the instance <SDRAMCTRL> is unconnected or connected to loadless signal.
 WARNING:Xst:653 - Signal <reset_i_S> is used but never assigned. This sourceless signal will be automatically connected to value GND.
+    Found 16-bit register for signal <FT_SHOW1>.
     Found 3-bit register for signal <state_SD>.
     Found finite state machine <FSM_0> for signal <state_SD>.
     -----------------------------------------------------------------------
-    | States             | 5                                              |
-    | Transitions        | 10                                             |
+    | States             | 6                                              |
+    | Transitions        | 12                                             |
     | Inputs             | 3                                              |
     | Outputs            | 6                                              |
     | Clock              | CLK (rising_edge)                              |
-    | Power Up State     | st_wait                                        |
+    | Power Up State     | st_wait1                                       |
     | Encoding           | auto                                           |
     | Implementation     | LUT                                            |
     -----------------------------------------------------------------------
-    Found 10-bit adder for signal <cnt[9]_GND_3_o_add_2_OUT> created at line 232.
+    Found 10-bit adder for signal <cnt[9]_GND_3_o_add_5_OUT> created at line 169.
 WARNING:Xst:737 - Found 1-bit latch for signal <cnt<9>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
 WARNING:Xst:737 - Found 1-bit latch for signal <cnt<8>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
 WARNING:Xst:737 - Found 1-bit latch for signal <cnt<7>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
@@ -169,31 +171,35 @@ WARNING:Xst:737 - Found 1-bit latch for signal <cnt<3>>. Latches may be generate
 WARNING:Xst:737 - Found 1-bit latch for signal <cnt<2>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
 WARNING:Xst:737 - Found 1-bit latch for signal <cnt<1>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
 WARNING:Xst:737 - Found 1-bit latch for signal <cnt<0>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
-WARNING:Xst:737 - Found 1-bit latch for signal <FT_SHOW1<15>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
-WARNING:Xst:737 - Found 1-bit latch for signal <FT_SHOW1<14>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
 WARNING:Xst:737 - Found 1-bit latch for signal <addr_i_S<23>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <addr_i_S<22>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <addr_i_S<21>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
 WARNING:Xst:737 - Found 1-bit latch for signal <addr_i_S<10>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
 WARNING:Xst:737 - Found 1-bit latch for signal <addr_i_S<3>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
 WARNING:Xst:737 - Found 1-bit latch for signal <addr_i_S<2>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
 WARNING:Xst:737 - Found 1-bit latch for signal <addr_i_S<1>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
 WARNING:Xst:737 - Found 1-bit latch for signal <addr_i_S<0>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
 WARNING:Xst:737 - Found 1-bit latch for signal <data_i_S<15>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <data_i_S<6>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
 WARNING:Xst:737 - Found 1-bit latch for signal <data_i_S<3>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
 WARNING:Xst:737 - Found 1-bit latch for signal <data_i_S<2>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
 WARNING:Xst:737 - Found 1-bit latch for signal <data_i_S<1>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
 WARNING:Xst:737 - Found 1-bit latch for signal <data_i_S<0>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
 WARNING:Xst:737 - Found 1-bit latch for signal <refresh_i_S>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
-    Found 10-bit comparator greater for signal <cnt[9]_GND_3_o_LessThan_4_o> created at line 233
+    Found 10-bit comparator greater for signal <cnt[9]_GND_3_o_LessThan_7_o> created at line 170
     Summary:
 	inferred   1 Adder/Subtractor(s).
-	inferred  24 Latch(s).
+	inferred  16 D-type flip-flop(s).
+	inferred  25 Latch(s).
 	inferred   1 Comparator(s).
-	inferred  40 Multiplexer(s).
+	inferred  41 Multiplexer(s).
 	inferred   1 Finite State Machine(s).
 Unit <Main_Code> synthesized.
 
 Synthesizing Unit <CONTROLLER_SDRAM>.
-    Related source file is "D:\final project\SDRAM\CONTROLLER_SDRAM.vhd".
+    Related source file is "D:\github\FinalProject\SDRAM\CONTROLLER_SDRAM.vhd".
+WARNING:Xst:647 - Input <ub_i> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <lb_i> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
     Found 4-bit register for signal <state_r>.
     Found 15-bit register for signal <timer_r>.
     Found 4-bit register for signal <cmd_r>.
@@ -210,49 +216,50 @@ Synthesizing Unit <CONTROLLER_SDRAM>.
     | States             | 12                                             |
     | Transitions        | 27                                             |
     | Inputs             | 4                                              |
-    | Outputs            | 21                                             |
+    | Outputs            | 22                                             |
     | Clock              | clk_100m0_i (falling_edge)                     |
     | Power Up State     | st_init_wait                                   |
     | Encoding           | auto                                           |
     | Implementation     | LUT                                            |
     -----------------------------------------------------------------------
-    Found 15-bit subtractor for signal <GND_8_o_GND_8_o_sub_10_OUT<14:0>> created at line 165.
-    Found 17-bit subtractor for signal <GND_8_o_GND_8_o_sub_12_OUT<16:0>> created at line 211.
-    Found 1-bit tristate buffer for signal <sdData_io<15>> created at line 116
-    Found 1-bit tristate buffer for signal <sdData_io<14>> created at line 116
-    Found 1-bit tristate buffer for signal <sdData_io<13>> created at line 116
-    Found 1-bit tristate buffer for signal <sdData_io<12>> created at line 116
-    Found 1-bit tristate buffer for signal <sdData_io<11>> created at line 116
-    Found 1-bit tristate buffer for signal <sdData_io<10>> created at line 116
-    Found 1-bit tristate buffer for signal <sdData_io<9>> created at line 116
-    Found 1-bit tristate buffer for signal <sdData_io<8>> created at line 116
-    Found 1-bit tristate buffer for signal <sdData_io<7>> created at line 116
-    Found 1-bit tristate buffer for signal <sdData_io<6>> created at line 116
-    Found 1-bit tristate buffer for signal <sdData_io<5>> created at line 116
-    Found 1-bit tristate buffer for signal <sdData_io<4>> created at line 116
-    Found 1-bit tristate buffer for signal <sdData_io<3>> created at line 116
-    Found 1-bit tristate buffer for signal <sdData_io<2>> created at line 116
-    Found 1-bit tristate buffer for signal <sdData_io<1>> created at line 116
-    Found 1-bit tristate buffer for signal <sdData_io<0>> created at line 116
+    Found 15-bit subtractor for signal <GND_8_o_GND_8_o_sub_10_OUT<14:0>> created at line 167.
+    Found 17-bit subtractor for signal <GND_8_o_GND_8_o_sub_12_OUT<16:0>> created at line 213.
+    Found 1-bit tristate buffer for signal <sdData_io<15>> created at line 118
+    Found 1-bit tristate buffer for signal <sdData_io<14>> created at line 118
+    Found 1-bit tristate buffer for signal <sdData_io<13>> created at line 118
+    Found 1-bit tristate buffer for signal <sdData_io<12>> created at line 118
+    Found 1-bit tristate buffer for signal <sdData_io<11>> created at line 118
+    Found 1-bit tristate buffer for signal <sdData_io<10>> created at line 118
+    Found 1-bit tristate buffer for signal <sdData_io<9>> created at line 118
+    Found 1-bit tristate buffer for signal <sdData_io<8>> created at line 118
+    Found 1-bit tristate buffer for signal <sdData_io<7>> created at line 118
+    Found 1-bit tristate buffer for signal <sdData_io<6>> created at line 118
+    Found 1-bit tristate buffer for signal <sdData_io<5>> created at line 118
+    Found 1-bit tristate buffer for signal <sdData_io<4>> created at line 118
+    Found 1-bit tristate buffer for signal <sdData_io<3>> created at line 118
+    Found 1-bit tristate buffer for signal <sdData_io<2>> created at line 118
+    Found 1-bit tristate buffer for signal <sdData_io<1>> created at line 118
+    Found 1-bit tristate buffer for signal <sdData_io<0>> created at line 118
+WARNING:Xst:737 - Found 1-bit latch for signal <flg_read_O>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
 WARNING:Xst:737 - Found 1-bit latch for signal <FT_SHOW<15>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
-WARNING:Xst:737 - Found 1-bit latch for signal <flg_read>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <FT_SHOW<0>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
     Summary:
 	inferred   2 Adder/Subtractor(s).
 	inferred  71 D-type flip-flop(s).
-	inferred   2 Latch(s).
-	inferred  31 Multiplexer(s).
+	inferred   3 Latch(s).
+	inferred  30 Multiplexer(s).
 	inferred  16 Tristate(s).
 	inferred   1 Finite State Machine(s).
 Unit <CONTROLLER_SDRAM> synthesized.
 
 Synthesizing Unit <Write_to_FT245>.
-    Related source file is "D:\final project\SDRAM\Write_to_FT245.vhd".
+    Related source file is "D:\github\FinalProject\SDRAM\Write_to_FT245.vhd".
     Found 1-bit register for signal <FT_WR>.
     Found 8-bit register for signal <DATA_FT>.
     Found 3-bit register for signal <cnt1>.
     Found 16-bit register for signal <cnt>.
-    Found 16-bit adder for signal <cnt[15]_GND_42_o_add_0_OUT> created at line 45.
-    Found 3-bit adder for signal <cnt1[2]_GND_42_o_add_11_OUT> created at line 66.
+    Found 16-bit adder for signal <cnt[15]_GND_43_o_add_0_OUT> created at line 45.
+    Found 3-bit adder for signal <cnt1[2]_GND_43_o_add_11_OUT> created at line 66.
     Found 4x1-bit Read Only RAM for signal <_n0061>
     Summary:
 	inferred   1 RAM(s).
@@ -273,18 +280,18 @@ Macro Statistics
  16-bit adder                                          : 1
  17-bit subtractor                                     : 1
  3-bit adder                                           : 1
-# Registers                                            : 14
+# Registers                                            : 15
  1-bit register                                        : 5
  13-bit register                                       : 1
  15-bit register                                       : 1
- 16-bit register                                       : 2
+ 16-bit register                                       : 3
  17-bit register                                       : 1
  2-bit register                                        : 1
  3-bit register                                        : 1
  4-bit register                                        : 1
  8-bit register                                        : 1
-# Latches                                              : 26
- 1-bit latch                                           : 26
+# Latches                                              : 28
+ 1-bit latch                                           : 28
 # Comparators                                          : 1
  10-bit comparator greater                             : 1
 # Multiplexers                                         : 75
@@ -306,13 +313,11 @@ Macro Statistics
 *                       Advanced HDL Synthesis                          *
 =========================================================================
 
-WARNING:Xst:1426 - The value init of the FF/Latch addr_i_S_23 hinder the constant cleaning in the block Main_Code.
-   You should achieve better results by setting this init to 0.
-WARNING:Xst:1426 - The value init of the FF/Latch FT_SHOW1_15 hinder the constant cleaning in the block Main_Code.
+INFO:Xst:2261 - The FF/Latch <sd_dqmu_r> in Unit <SDRAMCTRL> is equivalent to the following FF/Latch, which will be removed : <sd_dqml_r> 
+WARNING:Xst:1426 - The value init of the FF/Latch addr_i_S_10 hinder the constant cleaning in the block Main_Code.
    You should achieve better results by setting this init to 1.
 WARNING:Xst:1710 - FF/Latch <sd_dout_r_4> (without init value) has a constant value of 0 in block <SDRAMCTRL>. This FF/Latch will be trimmed during the optimization process.
 WARNING:Xst:1710 - FF/Latch <sd_dout_r_5> (without init value) has a constant value of 0 in block <SDRAMCTRL>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1710 - FF/Latch <sd_dout_r_6> (without init value) has a constant value of 0 in block <SDRAMCTRL>. This FF/Latch will be trimmed during the optimization process.
 WARNING:Xst:1710 - FF/Latch <sd_dout_r_7> (without init value) has a constant value of 0 in block <SDRAMCTRL>. This FF/Latch will be trimmed during the optimization process.
 WARNING:Xst:1710 - FF/Latch <sd_dout_r_8> (without init value) has a constant value of 0 in block <SDRAMCTRL>. This FF/Latch will be trimmed during the optimization process.
 WARNING:Xst:1710 - FF/Latch <sd_dout_r_9> (without init value) has a constant value of 0 in block <SDRAMCTRL>. This FF/Latch will be trimmed during the optimization process.
@@ -323,8 +328,7 @@ WARNING:Xst:1710 - FF/Latch <sd_dout_r_13> (without init value) has a constant v
 WARNING:Xst:1710 - FF/Latch <sd_dout_r_14> (without init value) has a constant value of 0 in block <SDRAMCTRL>. This FF/Latch will be trimmed during the optimization process.
 WARNING:Xst:1710 - FF/Latch <sd_dout_r_15> (without init value) has a constant value of 0 in block <SDRAMCTRL>. This FF/Latch will be trimmed during the optimization process.
 WARNING:Xst:1293 - FF/Latch <data_i_S_15> has a constant value of 0 in block <Main_Code>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1293 - FF/Latch <FT_SHOW1_14> has a constant value of 0 in block <Main_Code>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1293 - FF/Latch <addr_i_S_10> has a constant value of 1 in block <Main_Code>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <addr_i_S_21> has a constant value of 0 in block <Main_Code>. This FF/Latch will be trimmed during the optimization process.
 
 Synthesizing (advanced) Unit <CONTROLLER_SDRAM>.
 The following registers are absorbed into counter <timer_r>: 1 register on signal <timer_r>.
@@ -360,12 +364,12 @@ Macro Statistics
  16-bit up counter                                     : 1
  17-bit down counter                                   : 1
  3-bit up counter                                      : 1
-# Registers                                            : 48
- Flip-Flops                                            : 48
+# Registers                                            : 64
+ Flip-Flops                                            : 64
 # Comparators                                          : 1
  10-bit comparator greater                             : 1
-# Multiplexers                                         : 70
- 1-bit 2-to-1 multiplexer                              : 45
+# Multiplexers                                         : 71
+ 1-bit 2-to-1 multiplexer                              : 46
  13-bit 2-to-1 multiplexer                             : 13
  2-bit 2-to-1 multiplexer                              : 1
  4-bit 2-to-1 multiplexer                              : 9
@@ -377,25 +381,26 @@ Macro Statistics
 =========================================================================
 *                         Low Level Synthesis                           *
 =========================================================================
-WARNING:Xst:1426 - The value init of the FF/Latch addr_i_S_23 hinder the constant cleaning in the block Main_Code.
-   You should achieve better results by setting this init to 0.
-WARNING:Xst:1426 - The value init of the FF/Latch FT_SHOW1_15 hinder the constant cleaning in the block Main_Code.
+WARNING:Xst:1710 - FF/Latch <FT_SHOW_15> (without init value) has a constant value of 0 in block <CONTROLLER_SDRAM>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <FT_SHOW_0> (without init value) has a constant value of 1 in block <CONTROLLER_SDRAM>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1426 - The value init of the FF/Latch addr_i_S_10 hinder the constant cleaning in the block Main_Code.
    You should achieve better results by setting this init to 1.
 WARNING:Xst:1293 - FF/Latch <data_i_S_15> has a constant value of 0 in block <Main_Code>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1293 - FF/Latch <FT_SHOW1_14> has a constant value of 0 in block <Main_Code>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1293 - FF/Latch <addr_i_S_10> has a constant value of 1 in block <Main_Code>. This FF/Latch will be trimmed during the optimization process.
-INFO:Xst:2261 - The FF/Latch <sd_dout_r_4> in Unit <CONTROLLER_SDRAM> is equivalent to the following 11 FFs/Latches, which will be removed : <sd_dout_r_5> <sd_dout_r_6> <sd_dout_r_7> <sd_dout_r_8> <sd_dout_r_9> <sd_dout_r_10> <sd_dout_r_11> <sd_dout_r_12> <sd_dout_r_13> <sd_dout_r_14> <sd_dout_r_15> 
+WARNING:Xst:1293 - FF/Latch <addr_i_S_21> has a constant value of 0 in block <Main_Code>. This FF/Latch will be trimmed during the optimization process.
+INFO:Xst:2261 - The FF/Latch <sd_dqmu_r> in Unit <CONTROLLER_SDRAM> is equivalent to the following FF/Latch, which will be removed : <sd_dqml_r> 
+INFO:Xst:2261 - The FF/Latch <sd_dout_r_4> in Unit <CONTROLLER_SDRAM> is equivalent to the following 10 FFs/Latches, which will be removed : <sd_dout_r_5> <sd_dout_r_7> <sd_dout_r_8> <sd_dout_r_9> <sd_dout_r_10> <sd_dout_r_11> <sd_dout_r_12> <sd_dout_r_13> <sd_dout_r_14> <sd_dout_r_15> 
 WARNING:Xst:1710 - FF/Latch <sd_dout_r_4> (without init value) has a constant value of 0 in block <CONTROLLER_SDRAM>. This FF/Latch will be trimmed during the optimization process.
 Analyzing FSM <MFsm> for best encoding.
 Optimizing FSM <FSM_0> on signal <state_SD[1:3]> with user encoding.
 ------------------------
  State      | Encoding
 ------------------------
- st_wait    | 000
- st_idle    | 001
- st_write   | 010
- st_refresh | 011
- st_read    | 100
+ st_wait1   | 000
+ st_wait2   | 001
+ st_idle    | 010
+ st_write   | 011
+ st_refresh | 100
+ st_read    | 101
 ------------------------
 Analyzing FSM <MFsm> for best encoding.
 Optimizing FSM <SDRAMCTRL/FSM_1> on signal <state_r[1:4]> with user encoding.
@@ -415,21 +420,16 @@ Optimizing FSM <SDRAMCTRL/FSM_1> on signal <state_r[1:4]> with user encoding.
  st_ras2           | 1010
  st_precharge      | 1011
 -------------------------------
-WARNING:Xst:1710 - FF/Latch <cmd_r_3> (without init value) has a constant value of 0 in block <CONTROLLER_SDRAM>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1710 - FF/Latch <DATA_FT_0> (without init value) has a constant value of 0 in block <Write_to_FT245>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <DATA_FT_2> (without init value) has a constant value of 0 in block <Write_to_FT245>. This FF/Latch will be trimmed during the optimization process.
-INFO:Xst:2261 - The FF/Latch <addr_r_4> in Unit <CONTROLLER_SDRAM> is equivalent to the following 3 FFs/Latches, which will be removed : <addr_r_6> <addr_r_7> <addr_r_8> 
-INFO:Xst:2261 - The FF/Latch <addr_r_9> in Unit <CONTROLLER_SDRAM> is equivalent to the following 2 FFs/Latches, which will be removed : <addr_r_11> <addr_r_12> 
-INFO:Xst:2261 - The FF/Latch <bank_r_0> in Unit <CONTROLLER_SDRAM> is equivalent to the following FF/Latch, which will be removed : <bank_r_1> 
-INFO:Xst:2261 - The FF/Latch <DATA_FT_1> in Unit <Write_to_FT245> is equivalent to the following FF/Latch, which will be removed : <DATA_FT_3> 
-INFO:Xst:2261 - The FF/Latch <DATA_FT_5> in Unit <Write_to_FT245> is equivalent to the following FF/Latch, which will be removed : <DATA_FT_7> 
-INFO:Xst:2261 - The FF/Latch <DATA_FT_4> in Unit <Write_to_FT245> is equivalent to the following FF/Latch, which will be removed : <DATA_FT_6> 
-WARNING:Xst:2677 - Node <SDRAMCTRL/FT_SHOW_15> of sequential type is unconnected in block <Main_Code>.
-WARNING:Xst:2677 - Node <SDRAMCTRL/flg_read> of sequential type is unconnected in block <Main_Code>.
+WARNING:Xst:1710 - FF/Latch <addr_r_4> (without init value) has a constant value of 0 in block <CONTROLLER_SDRAM>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <addr_r_6> (without init value) has a constant value of 0 in block <CONTROLLER_SDRAM>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <addr_r_7> (without init value) has a constant value of 0 in block <CONTROLLER_SDRAM>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <addr_r_8> (without init value) has a constant value of 0 in block <CONTROLLER_SDRAM>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <addr_r_9> (without init value) has a constant value of 0 in block <CONTROLLER_SDRAM>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <addr_r_11> (without init value) has a constant value of 0 in block <CONTROLLER_SDRAM>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <addr_r_12> (without init value) has a constant value of 0 in block <CONTROLLER_SDRAM>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <cmd_r_3> (without init value) has a constant value of 0 in block <CONTROLLER_SDRAM>. This FF/Latch will be trimmed during the optimization process.
 
 Optimizing unit <Main_Code> ...
-INFO:Xst:2261 - The FF/Latch <SDRAMCTRL/addr_r_4> in Unit <Main_Code> is equivalent to the following FF/Latch, which will be removed : <SDRAMCTRL/bank_r_0> 
-INFO:Xst:2261 - The FF/Latch <SDRAMCTRL/addr_r_4> in Unit <Main_Code> is equivalent to the following FF/Latch, which will be removed : <SDRAMCTRL/bank_r_0> 
 
 Optimizing unit <Write_to_FT245> ...
 INFO:Xst:2261 - The FF/Latch <cnt1_0> in Unit <Write_to_FT245> is equivalent to the following FF/Latch, which will be removed : <FT_WR> 
@@ -455,13 +455,13 @@ WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Write_to_FT/cnt_14>
 
 Mapping all equations...
 Building and optimizing final netlist ...
-Found area constraint ratio of 100 (+ 5) on block Main_Code, actual ratio is 2.
-FlipFlop SDRAMCTRL/state_r_FSM_FFd1 has been replicated 1 time(s)
+Found area constraint ratio of 100 (+ 5) on block Main_Code, actual ratio is 3.
+FlipFlop SDRAMCTRL/state_r_FSM_FFd1 has been replicated 2 time(s)
 FlipFlop SDRAMCTRL/state_r_FSM_FFd2 has been replicated 1 time(s)
 FlipFlop SDRAMCTRL/state_r_FSM_FFd3 has been replicated 1 time(s)
-FlipFlop SDRAMCTRL/state_r_FSM_FFd4 has been replicated 1 time(s)
-FlipFlop state_SD_FSM_FFd1 has been replicated 1 time(s)
-FlipFlop state_SD_FSM_FFd3 has been replicated 1 time(s)
+FlipFlop SDRAMCTRL/state_r_FSM_FFd4 has been replicated 3 time(s)
+FlipFlop SDRAMCTRL/timer_r_12 has been replicated 1 time(s)
+FlipFlop SDRAMCTRL/timer_r_13 has been replicated 1 time(s)
 
 Final Macro Processing ...
 
@@ -469,8 +469,8 @@ Final Macro Processing ...
 Final Register Report
 
 Macro Statistics
-# Registers                                            : 68
- Flip-Flops                                            : 68
+# Registers                                            : 92
+ Flip-Flops                                            : 92
 
 =========================================================================
 
@@ -493,32 +493,33 @@ Top Level Output File Name         : Main_Code.ngc
 
 Primitive and Black Box Usage:
 ------------------------------
-# BELS                             : 244
+# BELS                             : 237
 #      GND                         : 1
 #      INV                         : 18
 #      LUT1                        : 14
-#      LUT2                        : 12
-#      LUT3                        : 11
+#      LUT2                        : 8
+#      LUT3                        : 19
 #      LUT4                        : 30
-#      LUT5                        : 43
-#      LUT6                        : 56
+#      LUT5                        : 26
+#      LUT6                        : 62
 #      MUXCY                       : 27
 #      MUXF7                       : 1
 #      VCC                         : 1
 #      XORCY                       : 30
-# FlipFlops/Latches                : 89
+# FlipFlops/Latches                : 116
 #      FD                          : 19
-#      FD_1                        : 13
-#      FDE                         : 8
+#      FD_1                        : 16
+#      FDE                         : 29
 #      FDE_1                       : 14
 #      FDR                         : 14
-#      LD                          : 21
+#      LD                          : 23
+#      LDE                         : 1
 # Clock Buffers                    : 1
 #      BUFG                        : 1
 # IO Buffers                       : 50
 #      IBUF                        : 2
+#      IOBUF                       : 16
 #      OBUF                        : 32
-#      OBUFT                       : 16
 
 Device utilization summary:
 ---------------------------
@@ -527,16 +528,16 @@ Selected Device : 6slx9tqg144-3
 
 
 Slice Logic Utilization: 
- Number of Slice Registers:              89  out of  11440     0%  
- Number of Slice LUTs:                  184  out of   5720     3%  
-    Number used as Logic:               184  out of   5720     3%  
+ Number of Slice Registers:             116  out of  11440     1%  
+ Number of Slice LUTs:                  177  out of   5720     3%  
+    Number used as Logic:               177  out of   5720     3%  
 
 Slice Logic Distribution: 
- Number of LUT Flip Flop pairs used:    194
-   Number with an unused Flip Flop:     105  out of    194    54%  
-   Number with an unused LUT:            10  out of    194     5%  
-   Number of fully used LUT-FF pairs:    79  out of    194    40%  
-   Number of unique control sets:        13
+ Number of LUT Flip Flop pairs used:    189
+   Number with an unused Flip Flop:      73  out of    189    38%  
+   Number with an unused LUT:            12  out of    189     6%  
+   Number of fully used LUT-FF pairs:   104  out of    189    55%  
+   Number of unique control sets:        14
 
 IO Utilization: 
  Number of IOs:                          50
@@ -563,16 +564,16 @@ NOTE: THESE TIMING NUMBERS ARE ONLY A SYNTHESIS ESTIMATE.
 
 Clock Information:
 ------------------
---------------------------------------------------------------------------+------------------------+-------+
-Clock Signal                                                              | Clock buffer(FF name)  | Load  |
---------------------------------------------------------------------------+------------------------+-------+
-state_SD[2]_PWR_29_o_Mux_43_o(state_SD_state_SD[2]_PWR_29_o_Mux_43_o1:O)  | NONE(*)(cnt_8)         | 10    |
-state_SD[1]_PWR_95_o_Mux_175_o(state_SD_state_SD[1]_PWR_95_o_Mux_175_o1:O)| NONE(*)(refresh_i_S)   | 1     |
-state_SD[2]_PWR_79_o_Mux_143_o(Mmux_state_SD[2]_PWR_79_o_Mux_143_o1:O)    | NONE(*)(data_i_S_3)    | 4     |
-state_SD[2]_PWR_55_o_Mux_95_o(Mmux_state_SD[2]_PWR_55_o_Mux_95_o1:O)      | NONE(*)(addr_i_S_2)    | 5     |
-state_SD[2]_PWR_39_o_Mux_63_o(Mmux_state_SD[2]_PWR_39_o_Mux_63_o11:O)     | NONE(*)(FT_SHOW1_15)   | 1     |
-CLK                                                                       | IBUF+BUFG              | 68    |
---------------------------------------------------------------------------+------------------------+-------+
+----------------------------------------------------------------------------------+------------------------------+-------+
+Clock Signal                                                                      | Clock buffer(FF name)        | Load  |
+----------------------------------------------------------------------------------+------------------------------+-------+
+state_SD[2]_PWR_30_o_Mux_46_o(state_SD_state_SD[2]_PWR_30_o_Mux_46_o1:O)          | NONE(*)(cnt_8)               | 10    |
+state_SD[2]_GND_94_o_Mux_146_o(state_SD_state_SD[2]_GND_94_o_Mux_146_o1:O)        | NONE(*)(refresh_i_S)         | 1     |
+state_SD[2]_PWR_40_o_Mux_66_o(Mmux_state_SD[2]_PWR_40_o_Mux_66_o1:O)              | NONE(*)(addr_i_S_2)          | 7     |
+state_SD[2]_PWR_64_o_Mux_114_o(Mmux_state_SD[2]_PWR_64_o_Mux_114_o1:O)            | NONE(*)(data_i_S_6)          | 5     |
+CLK                                                                               | IBUF+BUFG                    | 92    |
+SDRAMCTRL/GND_8_o_timer_r[14]_not_equal_8_o_inv(SDRAMCTRL/GND_8_o_INV_42_o<14>3:O)| NONE(*)(SDRAMCTRL/flg_read_O)| 1     |
+----------------------------------------------------------------------------------+------------------------------+-------+
 (*) These 5 clock signal(s) are generated by combinatorial logic,
 and XST is not able to identify which are the primary clock signals.
 Please use the CLOCK_SIGNAL constraint to specify the clock signal(s) generated by combinatorial logic.
@@ -586,8 +587,8 @@ Timing Summary:
 ---------------
 Speed Grade: -3
 
-   Minimum period: 6.065ns (Maximum Frequency: 164.889MHz)
-   Minimum input arrival time before clock: 3.359ns
+   Minimum period: 7.017ns (Maximum Frequency: 142.505MHz)
+   Minimum input arrival time before clock: 3.396ns
    Maximum output required time after clock: 4.844ns
    Maximum combinational path delay: 4.372ns
 
@@ -596,74 +597,75 @@ Timing Details:
 All values displayed in nanoseconds (ns)
 
 =========================================================================
-Timing constraint: Default period analysis for Clock 'state_SD[2]_PWR_29_o_Mux_43_o'
-  Clock period: 3.060ns (frequency: 326.835MHz)
+Timing constraint: Default period analysis for Clock 'state_SD[2]_PWR_30_o_Mux_46_o'
+  Clock period: 2.960ns (frequency: 337.826MHz)
   Total number of paths / destination ports: 55 / 10
 -------------------------------------------------------------------------
-Delay:               3.060ns (Levels of Logic = 2)
-  Source:            cnt_2 (LATCH)
-  Destination:       cnt_9 (LATCH)
-  Source Clock:      state_SD[2]_PWR_29_o_Mux_43_o falling
-  Destination Clock: state_SD[2]_PWR_29_o_Mux_43_o falling
+Delay:               2.960ns (Levels of Logic = 2)
+  Source:            cnt_3 (LATCH)
+  Destination:       cnt_8 (LATCH)
+  Source Clock:      state_SD[2]_PWR_30_o_Mux_46_o falling
+  Destination Clock: state_SD[2]_PWR_30_o_Mux_46_o falling
 
-  Data Path: cnt_2 to cnt_9
+  Data Path: cnt_3 to cnt_8
                                 Gate     Net
     Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
     ----------------------------------------  ------------
-     LD:G->Q              14   0.498   1.186  cnt_2 (cnt_2)
-     LUT6:I3->O            4   0.205   0.931  Madd_cnt[9]_GND_3_o_add_2_OUT_cy<5>11 (Madd_cnt[9]_GND_3_o_add_2_OUT_cy<5>)
-     LUT5:I1->O            1   0.203   0.000  Madd_cnt[9]_GND_3_o_add_2_OUT_xor<9>11 (cnt[9]_GND_3_o_add_2_OUT<9>)
-     LD:D                      0.037          cnt_9
+     LD:G->Q              20   0.498   1.093  cnt_3 (cnt_3)
+     LUT2:I1->O            1   0.205   0.924  cnt[9]_GND_3_o_add_5_OUT<8>_SW0 (N0)
+     LUT6:I1->O            1   0.203   0.000  cnt[9]_GND_3_o_add_5_OUT<8> (cnt[9]_GND_3_o_add_5_OUT<8>)
+     LD:D                      0.037          cnt_8
     ----------------------------------------
-    Total                      3.060ns (0.943ns logic, 2.117ns route)
-                                       (30.8% logic, 69.2% route)
+    Total                      2.960ns (0.943ns logic, 2.017ns route)
+                                       (31.9% logic, 68.1% route)
 
 =========================================================================
 Timing constraint: Default period analysis for Clock 'CLK'
-  Clock period: 6.065ns (frequency: 164.889MHz)
-  Total number of paths / destination ports: 2972 / 100
+  Clock period: 7.017ns (frequency: 142.505MHz)
+  Total number of paths / destination ports: 2649 / 144
 -------------------------------------------------------------------------
-Delay:               3.032ns (Levels of Logic = 2)
-  Source:            SDRAMCTRL/timer_r_2 (FF)
-  Destination:       state_SD_FSM_FFd3 (FF)
+Delay:               3.509ns (Levels of Logic = 3)
+  Source:            SDRAMCTRL/timer_r_7 (FF)
+  Destination:       state_SD_FSM_FFd1 (FF)
   Source Clock:      CLK falling
   Destination Clock: CLK rising
 
-  Data Path: SDRAMCTRL/timer_r_2 to state_SD_FSM_FFd3
+  Data Path: SDRAMCTRL/timer_r_7 to state_SD_FSM_FFd1
                                 Gate     Net
     Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
     ----------------------------------------  ------------
-     FD:C->Q               3   0.447   1.015  SDRAMCTRL/timer_r_2 (SDRAMCTRL/timer_r_2)
-     LUT6:I0->O           14   0.203   1.062  SDRAMCTRL/GND_8_o_INV_41_o<14>1 (SDRAMCTRL/GND_8_o_INV_41_o<14>)
-     LUT6:I4->O            2   0.203   0.000  state_SD_FSM_FFd1-In1 (state_SD_FSM_FFd1-In)
+     FD:C->Q               4   0.447   1.048  SDRAMCTRL/timer_r_7 (SDRAMCTRL/timer_r_7)
+     LUT6:I0->O            2   0.203   0.721  SDRAMCTRL/GND_8_o_INV_42_o<14>2_1 (SDRAMCTRL/GND_8_o_INV_42_o<14>2)
+     LUT6:I4->O            1   0.203   0.580  state_SD_FSM_FFd1-In_SW0 (N86)
+     LUT6:I5->O            1   0.205   0.000  state_SD_FSM_FFd1-In (state_SD_FSM_FFd1-In)
      FD:D                      0.102          state_SD_FSM_FFd1
     ----------------------------------------
-    Total                      3.032ns (0.955ns logic, 2.077ns route)
-                                       (31.5% logic, 68.5% route)
+    Total                      3.509ns (1.160ns logic, 2.349ns route)
+                                       (33.1% logic, 66.9% route)
 
 =========================================================================
 Timing constraint: Default OFFSET IN BEFORE for Clock 'CLK'
-  Total number of paths / destination ports: 6 / 6
+  Total number of paths / destination ports: 27 / 27
 -------------------------------------------------------------------------
-Offset:              3.359ns (Levels of Logic = 2)
+Offset:              3.396ns (Levels of Logic = 2)
   Source:            TXE (PAD)
-  Destination:       Write_to_FT/DATA_FT_5 (FF)
+  Destination:       Write_to_FT/DATA_FT_7 (FF)
   Destination Clock: CLK rising
 
-  Data Path: TXE to Write_to_FT/DATA_FT_5
+  Data Path: TXE to Write_to_FT/DATA_FT_7
                                 Gate     Net
     Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
     ----------------------------------------  ------------
-     IBUF:I->O             2   1.222   0.961  TXE_IBUF (TXE_IBUF)
-     LUT5:I0->O            3   0.203   0.650  Write_to_FT/_n0098_inv1 (Write_to_FT/_n0098_inv)
-     FDE:CE                    0.322          Write_to_FT/DATA_FT_1
+     IBUF:I->O             2   1.222   0.845  TXE_IBUF (TXE_IBUF)
+     LUT5:I2->O            8   0.205   0.802  Write_to_FT/_n0098_inv1 (Write_to_FT/_n0098_inv)
+     FDE:CE                    0.322          Write_to_FT/DATA_FT_0
     ----------------------------------------
-    Total                      3.359ns (1.747ns logic, 1.611ns route)
-                                       (52.0% logic, 48.0% route)
+    Total                      3.396ns (1.749ns logic, 1.647ns route)
+                                       (51.5% logic, 48.5% route)
 
 =========================================================================
 Timing constraint: Default OFFSET OUT AFTER for Clock 'CLK'
-  Total number of paths / destination ports: 48 / 44
+  Total number of paths / destination ports: 44 / 39
 -------------------------------------------------------------------------
 Offset:              4.844ns (Levels of Logic = 2)
   Source:            SDRAMCTRL/sd_busdir_r (FF)
@@ -676,7 +678,7 @@ Offset:              4.844ns (Levels of Logic = 2)
     ----------------------------------------  ------------
      FD_1:C->Q             2   0.447   0.616  SDRAMCTRL/sd_busdir_r (SDRAMCTRL/sd_busdir_r)
      INV:I->O             16   0.206   1.004  SDRAMCTRL/sd_busdir_r_inv1_INV_0 (SDRAMCTRL/sd_busdir_r_inv)
-     OBUFT:T->O                2.571          sdData_io_15_OBUFT (sdData_io<15>)
+     IOBUF:T->IO               2.571          sdData_io_15_IOBUF (sdData_io<15>)
     ----------------------------------------
     Total                      4.844ns (3.224ns logic, 1.620ns route)
                                        (66.6% logic, 33.4% route)
@@ -705,62 +707,70 @@ Cross Clock Domains Report:
 --------------------------
 
 Clock to Setup on destination clock CLK
-------------------------------+---------+---------+---------+---------+
-                              | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
-Source Clock                  |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
-------------------------------+---------+---------+---------+---------+
-CLK                           |    4.715|    3.032|    6.028|         |
-state_SD[1]_PWR_95_o_Mux_175_o|         |         |    4.275|         |
-state_SD[2]_PWR_29_o_Mux_43_o |         |    4.862|         |         |
-state_SD[2]_PWR_39_o_Mux_63_o |         |    1.524|         |         |
-state_SD[2]_PWR_55_o_Mux_95_o |         |         |    2.911|         |
-state_SD[2]_PWR_79_o_Mux_143_o|         |         |    1.179|         |
-------------------------------+---------+---------+---------+---------+
+-----------------------------------------------+---------+---------+---------+---------+
+                                               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock                                   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+-----------------------------------------------+---------+---------+---------+---------+
+CLK                                            |    5.351|    3.509|    5.983|         |
+SDRAMCTRL/GND_8_o_timer_r[14]_not_equal_8_o_inv|         |    3.076|    1.422|         |
+state_SD[2]_GND_94_o_Mux_146_o                 |         |         |    3.779|         |
+state_SD[2]_PWR_30_o_Mux_46_o                  |         |    4.172|         |         |
+state_SD[2]_PWR_40_o_Mux_66_o                  |         |         |    2.714|         |
+state_SD[2]_PWR_64_o_Mux_114_o                 |         |         |    1.179|         |
+-----------------------------------------------+---------+---------+---------+---------+
 
-Clock to Setup on destination clock state_SD[1]_PWR_95_o_Mux_175_o
+Clock to Setup on destination clock SDRAMCTRL/GND_8_o_timer_r[14]_not_equal_8_o_inv
 ---------------+---------+---------+---------+---------+
                | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
 Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
 ---------------+---------+---------+---------+---------+
-CLK            |         |         |    3.260|         |
+CLK            |         |         |    4.601|         |
 ---------------+---------+---------+---------+---------+
 
-Clock to Setup on destination clock state_SD[2]_PWR_29_o_Mux_43_o
+Clock to Setup on destination clock state_SD[2]_GND_94_o_Mux_146_o
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+CLK            |         |         |    4.019|         |
+---------------+---------+---------+---------+---------+
+
+Clock to Setup on destination clock state_SD[2]_PWR_30_o_Mux_46_o
 -----------------------------+---------+---------+---------+---------+
                              | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
 Source Clock                 |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
 -----------------------------+---------+---------+---------+---------+
-state_SD[2]_PWR_29_o_Mux_43_o|         |         |    3.060|         |
+state_SD[2]_PWR_30_o_Mux_46_o|         |         |    2.960|         |
 -----------------------------+---------+---------+---------+---------+
 
-Clock to Setup on destination clock state_SD[2]_PWR_55_o_Mux_95_o
+Clock to Setup on destination clock state_SD[2]_PWR_40_o_Mux_66_o
 -----------------------------+---------+---------+---------+---------+
                              | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
 Source Clock                 |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
 -----------------------------+---------+---------+---------+---------+
-CLK                          |         |         |    2.295|         |
-state_SD[2]_PWR_29_o_Mux_43_o|         |         |    3.902|         |
+CLK                          |         |         |    1.916|         |
+state_SD[2]_PWR_30_o_Mux_46_o|         |         |    3.881|         |
 -----------------------------+---------+---------+---------+---------+
 
-Clock to Setup on destination clock state_SD[2]_PWR_79_o_Mux_143_o
+Clock to Setup on destination clock state_SD[2]_PWR_64_o_Mux_114_o
 -----------------------------+---------+---------+---------+---------+
                              | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
 Source Clock                 |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
 -----------------------------+---------+---------+---------+---------+
-state_SD[2]_PWR_29_o_Mux_43_o|         |         |    3.805|         |
+state_SD[2]_PWR_30_o_Mux_46_o|         |         |    3.784|         |
 -----------------------------+---------+---------+---------+---------+
 
 =========================================================================
 
 
-Total REAL time to Xst completion: 11.00 secs
-Total CPU time to Xst completion: 11.05 secs
+Total REAL time to Xst completion: 10.00 secs
+Total CPU time to Xst completion: 10.41 secs
  
 --> 
 
-Total memory usage is 239952 kilobytes
+Total memory usage is 235868 kilobytes
 
 Number of errors   :    0 (   0 filtered)
-Number of warnings :   85 (   0 filtered)
-Number of infos    :   15 (   0 filtered)
+Number of warnings :   90 (   0 filtered)
+Number of infos    :    9 (   0 filtered)
 

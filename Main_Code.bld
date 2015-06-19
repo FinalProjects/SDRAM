@@ -5,7 +5,7 @@ Command Line: C:\Xilinx\14.7\ISE_DS\ISE\bin\nt64\unwrapped\ngdbuild.exe
 -intstyle ise -dd _ngo -nt timestamp -uc initialize.ucf -p xc6slx9-tqg144-3
 Main_Code.ngc Main_Code.ngd
 
-Reading NGO file "D:/final project/SDRAM/Main_Code.ngc" ...
+Reading NGO file "D:/github/FinalProject/SDRAM/Main_Code.ngc" ...
 Gathering constraint information from source properties...
 Done.
 
@@ -27,10 +27,10 @@ NGDBUILD Design Results Summary:
   Number of errors:     0
   Number of warnings:   0
 
-Total memory usage is 178952 kilobytes
+Total memory usage is 174828 kilobytes
 
 Writing NGD file "Main_Code.ngd" ...
-Total REAL time to NGDBUILD completion:  6 sec
+Total REAL time to NGDBUILD completion:  5 sec
 Total CPU time to NGDBUILD completion:   5 sec
 
 Writing NGDBUILD log file "Main_Code.bld"...

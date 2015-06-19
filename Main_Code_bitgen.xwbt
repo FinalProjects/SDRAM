@@ -1,8 +1,8 @@
 INTSTYLE=ise
-INFILE=D:\final project\SDRAM\Main_Code.ncd
-OUTFILE=D:\final project\SDRAM\Main_Code.bit
+INFILE=D:\github\FinalProject\SDRAM\Main_Code.ncd
+OUTFILE=D:\github\FinalProject\SDRAM\Main_Code.bit
 FAMILY=Spartan6
 PART=xc6slx9-3tqg144
-WORKINGDIR=D:\final project\SDRAM
+WORKINGDIR=D:\github\FinalProject\SDRAM
 LICENSE=WebPack
 USER_INFO=__0_0_0

@@ -5,7 +5,7 @@ C:\Xilinx\14.7\ISE_DS\ISE\.
    "Main_Code" is an NCD, version 3.2, device xc6slx9, package tqg144, speed -3
 Opened constraints file Main_Code.pcf.
 
-Thu Jun 18 13:07:33 2015
+Fri Jun 19 18:05:26 2015
 
 C:\Xilinx\14.7\ISE_DS\ISE\bin\nt64\unwrapped\bitgen.exe -intstyle ise -w -g DebugBitstream:No -g Binary:no -g CRC:Enable -g Reset_on_err:No -g ConfigRate:2 -g ProgPin:PullUp -g TckPin:PullUp -g TdiPin:PullUp -g TdoPin:PullUp -g TmsPin:PullUp -g UnusedPin:PullDown -g UserID:0xFFFFFFFF -g ExtMasterCclk_en:No -g SPI_buswidth:1 -g TIMER_CFG:0xFFFF -g multipin_wakeup:No -g StartUpClk:CClk -g DONE_cycle:4 -g GTS_cycle:5 -g GWE_cycle:6 -g LCK_cycle:NoWait -g Security:None -g DonePipe:Yes -g DriveDone:No -g en_sw_gsr:No -g drive_awake:No -g sw_clk:Startupclk -g sw_gwe_cycle:5 -g sw_gts_cycle:4 Main_Code.ncd 
 
@@ -129,23 +129,23 @@ There were 0 CONFIG constraint(s) processed from Main_Code.pcf.
 
 Running DRC.
 WARNING:PhysDesignRules:372 - Gated clock. Clock net
-   state_SD[2]_PWR_55_o_Mux_95_o is sourced by a combinatorial pin. This is not
+   SDRAMCTRL/GND_8_o_timer_r[14]_not_equal_8_o_inv is sourced by a combinatorial
+   pin. This is not good design practice. Use the CE pin to control the loading
+   of data into the flip-flop.
+WARNING:PhysDesignRules:372 - Gated clock. Clock net
+   state_SD[2]_PWR_30_o_Mux_46_o is sourced by a combinatorial pin. This is not
    good design practice. Use the CE pin to control the loading of data into the
    flip-flop.
 WARNING:PhysDesignRules:372 - Gated clock. Clock net
-   state_SD[2]_PWR_29_o_Mux_43_o is sourced by a combinatorial pin. This is not
+   state_SD[2]_GND_94_o_Mux_146_o is sourced by a combinatorial pin. This is not
    good design practice. Use the CE pin to control the loading of data into the
    flip-flop.
 WARNING:PhysDesignRules:372 - Gated clock. Clock net
-   state_SD[2]_PWR_39_o_Mux_63_o is sourced by a combinatorial pin. This is not
+   state_SD[2]_PWR_40_o_Mux_66_o is sourced by a combinatorial pin. This is not
    good design practice. Use the CE pin to control the loading of data into the
    flip-flop.
 WARNING:PhysDesignRules:372 - Gated clock. Clock net
-   state_SD[1]_PWR_95_o_Mux_175_o is sourced by a combinatorial pin. This is not
-   good design practice. Use the CE pin to control the loading of data into the
-   flip-flop.
-WARNING:PhysDesignRules:372 - Gated clock. Clock net
-   state_SD[2]_PWR_79_o_Mux_143_o is sourced by a combinatorial pin. This is not
+   state_SD[2]_PWR_64_o_Mux_114_o is sourced by a combinatorial pin. This is not
    good design practice. Use the CE pin to control the loading of data into the
    flip-flop.
 DRC detected 0 errors and 5 warnings.  Please see the previously displayed

@@ -1,4 +1,4 @@
 vhdl work "Write_to_FT245.vhd"
 vhdl work "CONTROLLER_SDRAM.vhd"
 vhdl work "Main_Code.vhd"
-vhdl work "test4_MainCode.vhd"
+vhdl work "TEST6_REALTIME.vhd"
